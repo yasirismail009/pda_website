@@ -150,7 +150,7 @@ export default function SwipeableTemporaryDrawer() {
             </ListItemText>
             <ListItemText>
               {router.pathname === "/" ? (
-                <Link href="/blogs/?lead=123">
+                <Link href="/app_guide">
                   {" "}
                   <div className="flex justify-left items-center py-2 border-b-2">
                     <p className=" text-base font-semibold ml-1 text-primary-dark">
@@ -159,7 +159,7 @@ export default function SwipeableTemporaryDrawer() {
                   </div>
                 </Link>
               ) : (
-                <Link href="/blogs/?lead=123">
+                <Link href="/app_guide">
                   <div className="flex justify-left items-center py-2 border-b-2">
                     <p className=" text-base font-semibold ml-1 text-primary-dark">
                       App Guide
@@ -171,14 +171,7 @@ export default function SwipeableTemporaryDrawer() {
 
             <ListItemText>
               {router.pathname === "/" ? (
-                <Link
-                  href="/blogs/?lead=123"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={50}
-                >
+                <Link href="/blogs?lead=124">
                   <div className="flex justify-left items-center py-2 ">
                     <p className=" text-base font-semibold ml-1 text-primary-dark">
                       Security News
@@ -186,14 +179,7 @@ export default function SwipeableTemporaryDrawer() {
                   </div>
                 </Link>
               ) : (
-                <Link
-                  href="/blogs/?lead=123"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={50}
-                >
+                <Link href="/blogs/?lead=123">
                   <div className="flex justify-left items-center py-2 border-b-2">
                     <p className=" text-base font-semibold ml-1 text-primary-dark">
                       Security News

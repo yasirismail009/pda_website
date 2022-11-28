@@ -26,7 +26,7 @@ html {
 
 /* Default body background from our theme */
 body {
-  @apply bg-paper;
+  @apply bg-white;
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
@@ -43,4 +43,12 @@ body {
 }
 .css-r1hick-MuiGrid-root > .MuiGrid-item {
   padding: 0 !important;
+}
+@media only screen and (max-width: 768px) {
+  .css-1l5mznc > .MuiGrid-item {
+    padding-top: 0 !important;
+  }
+  .css-1l5mznc {
+    margin-top: 0 !important;
+  }
 }

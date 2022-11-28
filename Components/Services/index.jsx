@@ -22,10 +22,10 @@ export default function Services() {
   }, []);
   return (
     <div
-      className="w-full h-full bg-primary-dark lg:p-24 sm:p-4 p-4"
+      className="flex flex-col justify-center items-center w-full h-full bg-primary-dark lg:p-24 sm:p-4 p-4"
       id="services"
     >
-      <div className="w-72 lg:mb-16 sm:mb-8 mb-8 ml-8  lg:pt-0 sm:pt-16 pt-16">
+      <div className="w-72 lg:mb-16 sm:mb-8 mb-8 lg:ml-8  lg:pt-0 sm:pt-16 pt-16">
         <ul className="grid grid-flow-col text-center  bg-primary-card rounded-full p-1 ">
           <li
             className="cursor-pointer"

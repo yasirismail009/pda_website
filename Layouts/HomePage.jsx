@@ -10,7 +10,7 @@ import News from "../Components/News/index";
 const Landing = () => {
   return (
     <div className="w-full">
-      <div className="w-full lg:p-20 sm:p-0 p-0 lg:pt-0 sm:pt-20 pt-20 bg-primary-main">
+      <div className="w-full lg:py-20 sm:py-0 py-0 lg:pt-0 sm:pt-20 pt-20 bg-primary-main">
         <Navbar />
         <LandingPage />
         <p className="ml-8 text-primary-dark text-2xl font-bold text-center">

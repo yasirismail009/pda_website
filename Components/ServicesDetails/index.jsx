@@ -12,12 +12,12 @@ export default function ServicesInfo() {
   console.log(FeaturesDetails);
   console.log(MapData);
   return (
-    <div>
+    <div className="lg:pt-0 sm:pt-16 pt-16 ">
       <LandingDetails MapData={MapData} />
       <MoreDetails
-        title={MapData.title}
-        des={MapData.details}
-        youtube={MapData.youtube}
+        title={MapData?.title}
+        des={MapData?.details}
+        youtube={MapData?.youtube}
       />
     </div>
   );

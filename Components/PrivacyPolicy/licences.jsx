@@ -239,53 +239,60 @@ export default function LicencesAggree() {
         (eay@cryptsoft.com). This product includes software written by Tim
         Hudson (tjh@cryptsoft.com).
       </p>
+
       <hr></hr>
       <h3 className="text-2xl font-bold py-4">
         Project Name: leonlatsch/Photok
       </h3>
       <hr></hr>
       <p>
-        Link :
-        <a
-          href="https://raw.githubusercontent.com/leonlatsch/Photok/develop/LICENSE"
-          target="_blank"
-        >
-          https://raw.githubusercontent.com
-          <br />
-          /leonlatsch/Photok/develop/LICENSE
-        </a>{" "}
-      </p>
-      <p>License:</p>
-      <p>Apache License Version 2.0, January 2004</p>
-      <hr></hr>
-      <h3 className="text-2xl font-bold py-4">
-        Project Name: celzero/rethink-app
-      </h3>
-      <hr></hr>
-      <p>
         Link :{" "}
         <a
-          href="https://github.com/celzero/rethink-app/blob/master/LICENSE"
+          href="https://github.com/leonlatsch/Photok/blob/develop/LICENSE"
           target="_blank"
         ></a>
-        https://github.com/celzero/rethink-app/blob/master/LICENSE
+        https://github.com/leonlatsch/Photok/blob/develop/LICENSE
       </p>
       <p>License:</p>
       <p>Apache License Version 2.0, January 2004</p>
       <hr></hr>
       <h3 className="text-2xl font-bold py-4">
-        Project Name: JZ-Darkal/AndroidHttpCapture
+        Project Name: Jigsaw-Code/outline-go-tun2socks
       </h3>
       <hr></hr>
       <p>
         Link :{" "}
         <a
-          href="https://github.com/JZ-Darkal/AndroidHttpCapture/blob/master/LICENSE"
+          href="https://github.com/Jigsaw-Code/outline-go-tun2socks/blob/master/LICENSE"
           target="_blank"
-        ></a>{" "}
-        https://github.com/JZ-Darkal/AndroidHttpCapture/blob
-        <br />
-        /master/LICENSE
+        ></a>
+        https://github.com/Jigsaw-Code/outline-go-tun2socks/blob/master/LICENSE
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">
+        Project Name: rommansabbir/NetworkX
+      </h3>
+      <hr></hr>
+      <p>
+        Link : <a href="NA" target="_blank"></a>
+        NA
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">
+        Project Name: chthai64/SwipeRevealLayout
+      </h3>
+      <hr></hr>
+      <p>
+        Link :{" "}
+        <a
+          href="https://github.com/chthai64/SwipeRevealLayout/blob/master/LICENSE.txt"
+          target="_blank"
+        ></a>
+        https://github.com/chthai64/SwipeRevealLayout/blob/master/LICENSE.txt
       </p>
       <p>License:</p>
       <p>MIT License Copyright (c) 2018</p>
@@ -306,6 +313,230 @@ export default function LicencesAggree() {
         CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH
         THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THESOFTWARE.
       </p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">Project Name: intuit/ssp</h3>
+      <hr></hr>
+      <p>
+        Link :{" "}
+        <a
+          href="https://github.com/intuit/ssp/blob/master/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/intuit/ssp/blob/master/LICENSE
+      </p>
+      <p>License:</p>
+      <p>MIT License Copyright (c) 2018</p>
+      <p>
+        MIT LicenseCopyright (c) 2018 DarkalPermission is hereby granted, free
+        of charge, to any person obtaining a copyof this software and associated
+        documentation files (the "Software"), to dealin the Software without
+        restriction, including without limitation the rightsto use, copy,
+        modify, merge, publish, distribute, sublicense, and/or sellcopies of the
+        Software, and to permit persons to whom the Software isfurnished to do
+        so, subject to the following conditions:The above copyright notice and
+        this permission notice shall be included in allcopies or substantial
+        portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT
+        WARRANTY OF ANY KIND, EXPRESS ORIMPLIED, INCLUDING BUT NOT LIMITED TO
+        THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THEAUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHERLIABILITY, WHETHER IN AN ACTION OF
+        CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH
+        THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THESOFTWARE.
+      </p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">Project Name: intuit/sdp</h3>
+      <hr></hr>
+      <p>
+        Link :{" "}
+        <a
+          href="https://github.com/intuit/sdp/blob/master/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/intuit/sdp/blob/master/LICENSE
+      </p>
+      <p>License:</p>
+      <p>MIT License Copyright (c) 2018</p>
+      <p>
+        MIT LicenseCopyright (c) 2018 DarkalPermission is hereby granted, free
+        of charge, to any person obtaining a copyof this software and associated
+        documentation files (the "Software"), to dealin the Software without
+        restriction, including without limitation the rightsto use, copy,
+        modify, merge, publish, distribute, sublicense, and/or sellcopies of the
+        Software, and to permit persons to whom the Software isfurnished to do
+        so, subject to the following conditions:The above copyright notice and
+        this permission notice shall be included in allcopies or substantial
+        portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT
+        WARRANTY OF ANY KIND, EXPRESS ORIMPLIED, INCLUDING BUT NOT LIMITED TO
+        THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THEAUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHERLIABILITY, WHETHER IN AN ACTION OF
+        CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH
+        THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THESOFTWARE.
+      </p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">
+        Project Name: KeepSafe/TapTargetView
+      </h3>
+      <hr></hr>
+      <p>
+        Link :{" "}
+        <a
+          href="https://github.com/KeepSafe/TapTargetView/blob/master/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/KeepSafe/TapTargetView/blob/master/LICENSE
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">
+        Project Name: pablobaxter/Harmony
+      </h3>
+      <hr></hr>
+      <p>
+        Link :{" "}
+        <a
+          href="https://github.com/pablobaxter/Harmony/blob/main/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/pablobaxter/Harmony/blob/main/LICENSE
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">
+        Project Name: scottyab/rootbeer
+      </h3>
+      <hr></hr>
+      <p>
+        Link :{" "}
+        <a
+          href="https://github.com/scottyab/rootbeer/blob/master/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/scottyab/rootbeer/blob/master/LICENSE
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">Project Name: jBCrypt</h3>
+      <hr></hr>
+      <p>License:</p>
+      <p>BSD license (Berkeley Source Distribution)</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">Project Name: ExoPlayer</h3>
+      <hr></hr>
+      <p>
+        Link :
+        <a
+          href="https://github.com/google/ExoPlayer/blob/release-v2/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/google/ExoPlayer/blob/release-v2/LICENSE
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">
+        Project Name: googlesamples/easypermissions
+      </h3>
+      <hr></hr>
+      <p>
+        Link :
+        <a
+          href="https://github.com/googlesamples/easypermissions/blob/master/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/googlesamples/easypermissions/blob/master/LICENSE
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">Project Name:lisawray/groupie</h3>
+      <hr></hr>
+      <p>
+        Link :
+        <a
+          href="https://github.com/lisawray/groupie/blob/master/LICENSE.md"
+          target="_blank"
+        ></a>
+        https://github.com/lisawray/groupie/blob/master/LICENSE.md
+      </p>
+      <p>License:</p>
+      <p>MIT License Copyright (c) 2018</p>
+      <p>
+        MIT LicenseCopyright (c) 2018 DarkalPermission is hereby granted, free
+        of charge, to any person obtaining a copyof this software and associated
+        documentation files (the "Software"), to dealin the Software without
+        restriction, including without limitation the rightsto use, copy,
+        modify, merge, publish, distribute, sublicense, and/or sellcopies of the
+        Software, and to permit persons to whom the Software isfurnished to do
+        so, subject to the following conditions:The above copyright notice and
+        this permission notice shall be included in allcopies or substantial
+        portions of the Software.THE SOFTWARE IS PROVIDED "AS IS", WITHOUT
+        WARRANTY OF ANY KIND, EXPRESS ORIMPLIED, INCLUDING BUT NOT LIMITED TO
+        THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THEAUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHERLIABILITY, WHETHER IN AN ACTION OF
+        CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH
+        THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THESOFTWARE.
+      </p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">
+        Project Name: airbnb/lottie-android
+      </h3>
+      <hr></hr>
+      <p>
+        Link :
+        <a
+          href="https://github.com/airbnb/lottie-android/blob/master/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/airbnb/lottie-android/blob/master/LICENSE
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">
+        Project Name: barteksc/AndroidPdfViewer
+      </h3>
+      <hr></hr>
+      <p>
+        Link :
+        <a
+          href="https://github.com/barteksc/AndroidPdfViewer/blob/master/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/barteksc/AndroidPdfViewer/blob/master/LICENSE
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">Project Name: bumptech/glide</h3>
+      <hr></hr>
+      <p>
+        Link :
+        <a
+          href="https://github.com/bumptech/glide/blob/master/LICENSE"
+          target="_blank"
+        ></a>
+        https://github.com/bumptech/glide/blob/master/LICENSE
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
+      <hr></hr>
+      <h3 className="text-2xl font-bold py-4">Project Name: square/retrofit</h3>
+      <hr></hr>
+      <p>
+        Link :
+        <a
+          href="https://github.com/square/retrofit/blob/master/LICENSE.txt"
+          target="_blank"
+        ></a>
+        https://github.com/square/retrofit/blob/master/LICENSE.txt
+      </p>
+      <p>License:</p>
+      <p>Apache License Version 2.0, January 2004</p>
       <hr></hr>
       <h3 className="text-2xl font-bold py-4">OpenSSL Combined License</h3>
       <hr></hr>

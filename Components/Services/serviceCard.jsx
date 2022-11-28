@@ -6,7 +6,7 @@ import { validateConfig } from "next/dist/server/config-shared";
 export default function BasicCard(props) {
   const AndroidData = props.AndroidData;
   return (
-    <div className="p-8 m-8 shadow-2xl bg-primary-card text-primary-main hover:bg-primary-text hover:text-primary-dark rounded-2xl">
+    <div className="p-8 lg:m-8  sm:m-2 m-2 shadow-2xl bg-primary-card text-primary-main hover:bg-primary-text hover:text-primary-dark rounded-2xl">
       <div className="lg:h-60">
         <Image src={AndroidData.img} alt={AndroidData.title} className="mb-2" />
         <p className="lg:text-2xl sm:text-xl text-xl font-bold mb-3">

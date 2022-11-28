@@ -9,7 +9,7 @@ import { ThemeProvider } from "@mui/material";
 
 const Home: NextPage = () => {
   const [showCookies, setShowCookies] = useState("hidden");
-  const CookiesAcceptFunction = (Data: boolean) => {
+  const CookiesAcceptFunction = (Data: string) => {
     localStorage.setItem("cookies", Data);
   };
   useEffect(() => {
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
       <Footer />
       <CookieConsent
         onAccept={(acceptedByScrolling) => {
-          CookiesAcceptFunction(acceptedByScrolling);
+          CookiesAcceptFunction("true");
           if (acceptedByScrolling) {
             setShowCookies("hidden");
           } else {

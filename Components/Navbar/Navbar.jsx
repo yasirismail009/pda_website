@@ -14,13 +14,17 @@ import styles from "../../styles/Bg.module.css";
 // Assets import
 import PdaLogo from "../../Assets/pda_logo.svg";
 import PligenceLogo from "../../Assets/pligence_logo.svg";
-
+// width: 100%;
+// position: fixed;
+// top: 0;
+// z-index: 999;
+// background-color: #fff;
 export default function MainNavbar() {
   const router = useRouter();
 
   return (
     <div
-      className={`${styles.navbar} w-full lg:px-20 lg:py-4 md:px-0 sm:px-10 px-0 md:py-0 sm:py-0 py-0  lg:shadow-none`}
+      className="w-full fixed top-0 z-[999] bg-primary-main lg:px-20 lg:py-4 md:px-0 sm:px-10 px-0 md:py-0 sm:py-0 py-0 lg:shadow-none sm:shadow-md shadow-md"
       position="static"
     >
       <Toolbar className="w-full">
@@ -153,37 +157,23 @@ export default function MainNavbar() {
               </Link>
             )}
             {router.pathname === "/" ? (
-              <LinkS
-                to="security_news"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={50}
-              >
+              <Link href="/blogs?lead=124">
                 <p
                   className="cursor-pointer text-white lg:text-base md:text-base  font-bold lg:block  sm:hidden hidden"
                   style={{ color: "#173371" }}
                 >
                   Security News
                 </p>
-              </LinkS>
+              </Link>
             ) : (
-              <LinkS
-                to="security_news"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={50}
-              >
+              <Link href="/blogs?lead=124">
                 <p
                   className="cursor-pointer text-white lg:text-base md:text-base  font-semibold lg:block  sm:hidden hidden"
                   style={{ color: "#173371" }}
                 >
                   Security News
                 </p>
-              </LinkS>
+              </Link>
             )}
 
             <LinkS

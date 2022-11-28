@@ -15,12 +15,12 @@ export default function Cards() {
               : "bg-primary-main text-primary-dark"
           )}
         >
-          <p className="lg:text-3xl sm:text-lg text-lg  font-bold mb-2">
+          <div className="lg:text-3xl sm:text-lg text-lg  font-bold mb-2">
             {val.title}
-          </p>
-          <p className="lg:text-lg sm:text-sm text-sm font-medium mb-8">
+          </div>
+          <div className="lg:text-lg sm:text-sm text-sm font-medium mb-8">
             {val.details}
-          </p>
+          </div>
           <div className="flex justify-center items-center">
             <div className="lg:block sm:hidden hidden">
               <YoutubeEmbed embedId={val.youtube} />

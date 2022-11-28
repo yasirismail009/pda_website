@@ -47,7 +47,7 @@ export default function PricingChild() {
     }
   }, [isActiveButton]);
   return (
-    <div className="w-full h-full bg-primary-main lg:p-24 sm:p-4 p-4">
+    <div className="w-full h-full bg-primary-main lg:p-24 sm:p-2 p-2">
       <div className="lg:my-0 sm:my-8 my-8 ">
         <p className="lg:text-4xl sm:text-xl text-xl font-bold text-primary-dark lg:ml-8 sm:ml-0 ml-0 mb-2">
           Choose Our Plan?
@@ -56,8 +56,8 @@ export default function PricingChild() {
           Our services are defined by quality and commitment.
         </p>
       </div>
-      <div className="w-full shadow-2xl rounded-3xl lg:py-8 sm:py-0 py-0 lg:px-16 sm:px-6 px-6">
-        <div className="w-72 lg:mb-8 sm:mb-8 mb-8  lg:pt-0 sm:pt-4 pt-4">
+      <div className="w-full flex flex-col justify-center ite shadow-2xl rounded-3xl lg:py-8 sm:py-0 py-0 lg:px-16 sm:px-4 px-4">
+        <div className="w-72 lg:mb-8 sm:mb-8 mb-8   lg:pt-0 sm:pt-4 pt-4">
           <ul className="grid grid-flow-col text-center  bg-[#ECECEC] rounded-full p-1 ">
             <li
               className="cursor-pointer"
@@ -98,9 +98,9 @@ export default function PricingChild() {
         <div className=" w-full h-full bg-primary-main ">
           <Grid container spacing={2}>
             <Grid item lg={5} xs={12}>
-              <p className="text-primary-dark text-lg font-bold lg:mb-0 sm:mb-2 mb-2">
+              <div className="text-primary-dark text-lg font-bold lg:mb-0 sm:mb-2 mb-2">
                 Features
-              </p>
+              </div>
               {mapData.map((val, key) => (
                 <div className="flex items-center">
                   <div className="w-6">
@@ -119,7 +119,7 @@ export default function PricingChild() {
               <div className="lg:mt-0 sm:mt-20 mt-20">
                 <div
                   className={clsx(
-                    "cursor-pointer flex flex-wrap justify-between items-center border-4 border-primary-dark  p-4 px-8 rounded-2xl mb-8",
+                    "cursor-pointer flex flex-wrap lg:justify-between sm:justify-around justify-around items-center border-4 border-primary-dark  p-4 lg:px-8 rounded-2xl mb-8",
                     isActiveButton === "free"
                       ? "bg-primary-dark"
                       : "bg-primary-main"
@@ -135,56 +135,58 @@ export default function PricingChild() {
                     }}
                     className="w-8 h-8 text-[#ffc200] bg-gray-100 border-gray-300 focus:ring-[#ffc200] dark:focus:ring-[#ffc200] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
-                  <p
-                    for="free"
-                    className={clsx(
-                      "lg:ml-8 lg:text-3xl sm:text-2xl text-2xl font-semibold ",
-                      isActiveButton === "free"
-                        ? "text-primary-main dark:text-primary-main"
-                        : "text-primary-dark dark:text-primary-dark"
-                    )}
-                  >
-                    Free
-                    <p className="lg:text-base sm:text-xs text-xs  font-medium">
-                      <span className="text-[#ffc200]">7 features </span>you can
-                      enjoy
-                    </p>
-                    <p className="lg:w-28 sm:w-24 w-24 lg:text-base sm:text-xs text-xs font-semibold bg-primary-card text-primary-main p-2 rounded-lg mt-2 text-center lg:mb-0 mb-2 mb-2">
-                      Save 100%
-                    </p>
-                  </p>
-                  <p
-                    className={clsx(
-                      "ml-16 lg:text-3xl sm:text-3xl text-3xl font-semibold lg:mb-0 mb-2 mb-2",
-                      isActiveButton === "free"
-                        ? "text-primary-main"
-                        : "text-primary-dark"
-                    )}
-                  >
-                    0.00$/
-                    <span className="lg:text-xl sm:text-xs text-xs">
-                      life time
-                    </span>
-                  </p>
-                  <a
-                    href={isActive === "android" ? AndroidStore : AppleStore}
-                    target="_blank"
-                  >
-                    <p
+                  <div className="lg:flex sm:block block flex-row justify-center items-center">
+                    <div
+                      for="free"
                       className={clsx(
-                        "ml-16  lg:px-8 sm:px-4 px-4 lg:py-4 sm:py-2 py-2  lg:rounded-xl sm:rounded-lg rounded-lg lg:text-base sm:text-xs text-xs font-bold",
+                        "lg:ml-8 lg:text-3xl sm:text-2xl text-2xl font-semibold ",
                         isActiveButton === "free"
-                          ? "bg-[#ffc200] text-primary-dark"
-                          : " bg-primary-dark text-primary-main"
+                          ? "text-primary-main dark:text-primary-main"
+                          : "text-primary-dark dark:text-primary-dark"
                       )}
                     >
-                      Get Started
-                    </p>
-                  </a>
+                      Free
+                      <p className="lg:text-base sm:text-xs text-xs  font-medium">
+                        <span className="text-[#ffc200]">7 features </span>you
+                        can enjoy
+                      </p>
+                      <p className="lg:w-28 sm:w-24 w-24 lg:text-base sm:text-xs text-xs font-semibold bg-primary-card text-primary-main p-2 rounded-lg mt-2 text-center lg:mb-0 mb-2 mb-2">
+                        Save 100%
+                      </p>
+                    </div>
+                    <div
+                      className={clsx(
+                        "lg:ml-16 lg:text-3xl sm:text-3xl text-3xl font-semibold lg:mb-0 sm:mb-2 mb-2",
+                        isActiveButton === "free"
+                          ? "text-primary-main"
+                          : "text-primary-dark"
+                      )}
+                    >
+                      0.00$/
+                      <span className="lg:text-xl sm:text-xs text-xs">
+                        life time
+                      </span>
+                    </div>
+                    <a
+                      href={isActive === "android" ? AndroidStore : AppleStore}
+                      target="_blank"
+                    >
+                      <div
+                        className={clsx(
+                          "lg:ml-16  lg:px-8 sm:px-4 px-4 lg:py-4 sm:py-2 py-2  lg:rounded-xl sm:rounded-lg rounded-lg lg:text-base sm:text-xs text-xs font-bold",
+                          isActiveButton === "free"
+                            ? "bg-[#ffc200] text-primary-dark"
+                            : " bg-primary-dark text-primary-main"
+                        )}
+                      >
+                        Get Started
+                      </div>
+                    </a>
+                  </div>
                 </div>
                 <div
                   className={clsx(
-                    "cursor-pointer flex flex-wrap justify-between items-center border-4 border-primary-dark  p-4 px-8 rounded-2xl mb-8",
+                    "cursor-pointer flex flex-wrap lg:justify-between sm:justify-around justify-around items-center border-4 border-primary-dark  p-4 px-8 rounded-2xl mb-8",
                     isActiveButton === "monthly"
                       ? "bg-primary-dark"
                       : "bg-primary-main"
@@ -200,53 +202,55 @@ export default function PricingChild() {
                     }}
                     className="w-8 h-8 text-[#ffc200] bg-gray-100 border-gray-300 focus:ring-[#ffc200] dark:focus:ring-[#ffc200] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
-                  <p
-                    for="monthly"
-                    className={clsx(
-                      "lg:ml-8 lg:text-3xl sm:text-2xl text-2xl font-semibold ",
-                      isActiveButton === "monthly"
-                        ? "text-primary-main dark:text-primary-main"
-                        : "text-primary-dark dark:text-primary-dark"
-                    )}
-                  >
-                    Monthly
-                    <p className="lg:text-base sm:text-xs text-xs  font-medium">
-                      <span className="text-[#ffc200]">14 features </span>you
-                      can enjoy
-                    </p>
-                    <p className="lg:w-28 sm:w-24 w-24 lg:text-base sm:text-xs text-xs font-semibold bg-primary-card text-primary-main p-2 rounded-lg mt-2 text-center lg:mb-0 mb-2 mb-2">
-                      Save 100%
-                    </p>
-                  </p>
-                  <p
-                    className={clsx(
-                      "ml-16 lg:text-3xl sm:text-3xl text-3xl font-semibold lg:mb-0 mb-2 mb-2",
-                      isActiveButton === "monthly"
-                        ? "text-primary-main"
-                        : "text-primary-dark"
-                    )}
-                  >
-                    1.99$/<span className="text-xl">month</span>
-                  </p>
-                  <a
-                    href={isActive === "android" ? AndroidStore : AppleStore}
-                    target="_blank"
-                  >
-                    <p
+                  <div className="lg:flex sm:block block flex-row justify-center items-center">
+                    <div
+                      for="monthly"
                       className={clsx(
-                        "ml-16  lg:px-8 sm:px-4 px-4 lg:py-4 sm:py-2 py-2  lg:rounded-xl sm:rounded-lg rounded-lg lg:text-base sm:text-xs text-xs font-bold",
+                        "lg:ml-8 lg:text-3xl sm:text-2xl text-2xl font-semibold ",
                         isActiveButton === "monthly"
-                          ? "bg-[#ffc200] text-primary-dark"
-                          : " bg-primary-dark text-primary-main"
+                          ? "text-primary-main dark:text-primary-main"
+                          : "text-primary-dark dark:text-primary-dark"
                       )}
                     >
-                      Get Started
-                    </p>
-                  </a>
+                      Monthly
+                      <p className="lg:text-base sm:text-xs text-xs  font-medium">
+                        <span className="text-[#ffc200]">14 features </span>you
+                        can enjoy
+                      </p>
+                      <p className="lg:w-28 sm:w-24 w-24 lg:text-base sm:text-xs text-xs font-semibold bg-primary-card text-primary-main p-2 rounded-lg mt-2 text-center lg:mb-0 mb-2 mb-2">
+                        Save 100%
+                      </p>
+                    </div>
+                    <div
+                      className={clsx(
+                        "lg:ml-16 lg:text-3xl sm:text-3xl text-3xl font-semibold lg:mb-0 mb-2 mb-2",
+                        isActiveButton === "monthly"
+                          ? "text-primary-main"
+                          : "text-primary-dark"
+                      )}
+                    >
+                      1.99$/<span className="text-xl">month</span>
+                    </div>
+                    <a
+                      href={isActive === "android" ? AndroidStore : AppleStore}
+                      target="_blank"
+                    >
+                      <div
+                        className={clsx(
+                          "lg:ml-16  lg:px-8 sm:px-4 px-4 lg:py-4 sm:py-2 py-2  lg:rounded-xl sm:rounded-lg rounded-lg lg:text-base sm:text-xs text-xs font-bold",
+                          isActiveButton === "monthly"
+                            ? "bg-[#ffc200] text-primary-dark"
+                            : " bg-primary-dark text-primary-main"
+                        )}
+                      >
+                        Get Started
+                      </div>
+                    </a>
+                  </div>
                 </div>
                 <div
                   className={clsx(
-                    "cursor-pointer flex flex-wrap justify-between items-center border-4 border-primary-dark  p-4 px-8 rounded-2xl mb-8",
+                    "cursor-pointer flex flex-wrap lg:justify-between sm:justify-around justify-around items-center border-4 border-primary-dark  p-4 px-8 rounded-2xl mb-8",
                     isActiveButton === "yearly"
                       ? "bg-primary-dark"
                       : "bg-primary-main"
@@ -262,49 +266,51 @@ export default function PricingChild() {
                     }}
                     className="w-8 h-8 text-[#ffc200] bg-gray-100 border-gray-300 focus:ring-[#ffc200] dark:focus:ring-[#ffc200] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
-                  <p
-                    for="yearly"
-                    className={clsx(
-                      "lg:ml-8 lg:text-3xl sm:text-2xl text-2xl font-semibold ",
-                      isActiveButton === "yearly"
-                        ? "text-primary-main dark:text-primary-main"
-                        : "text-primary-dark dark:text-primary-dark"
-                    )}
-                  >
-                    Yearly
-                    <p className="lg:text-base sm:text-xs text-xs   font-medium">
-                      <span className="text-[#ffc200]">14 features </span>you
-                      can enjoy
-                    </p>
-                    <p className="lg:w-28 sm:w-24 w-24 lg:text-base sm:text-xs text-xs font-semibold bg-primary-card text-primary-main p-2 rounded-lg mt-2 text-center lg:mb-0 mb-2 mb-2">
-                      Save 100%
-                    </p>
-                  </p>
-                  <p
-                    className={clsx(
-                      "lg:ml-16 sm:ml-12 ml-12 lg:text-3xl sm:text-3xl text-3xl font-semibold lg:mb-0 mb-2 mb-2",
-                      isActiveButton === "yearly"
-                        ? "text-primary-main"
-                        : "text-primary-dark"
-                    )}
-                  >
-                    19.99$/<span className="text-xl">year</span>
-                  </p>
-                  <a
-                    href={isActive === "android" ? AndroidStore : AppleStore}
-                    target="_blank"
-                  >
-                    <p
+                  <div className="lg:flex sm:block block flex-row justify-center items-center">
+                    <div
+                      for="yearly"
                       className={clsx(
-                        "lg:ml-16 sm:ml-12 ml-12  lg:px-8 sm:px-4 px-4 lg:py-4 sm:py-2 py-2  lg:rounded-xl sm:rounded-lg rounded-lg lg:text-base sm:text-xs text-xs font-bold",
+                        "lg:ml-8 lg:text-3xl sm:text-2xl text-2xl font-semibold ",
                         isActiveButton === "yearly"
-                          ? "bg-[#ffc200] text-primary-dark"
-                          : " bg-primary-dark text-primary-main"
+                          ? "text-primary-main dark:text-primary-main"
+                          : "text-primary-dark dark:text-primary-dark"
                       )}
                     >
-                      Get Started
-                    </p>
-                  </a>
+                      Yearly
+                      <p className="lg:text-base sm:text-xs text-xs   font-medium">
+                        <span className="text-[#ffc200]">14 features </span>you
+                        can enjoy
+                      </p>
+                      <p className="lg:w-28 sm:w-24 w-24 lg:text-base sm:text-xs text-xs font-semibold bg-primary-card text-primary-main p-2 rounded-lg mt-2 text-center lg:mb-0 mb-2 mb-2">
+                        Save 100%
+                      </p>
+                    </div>
+                    <div
+                      className={clsx(
+                        "lg:ml-16 s lg:text-3xl sm:text-3xl text-3xl font-semibold lg:mb-0 mb-2 mb-2",
+                        isActiveButton === "yearly"
+                          ? "text-primary-main"
+                          : "text-primary-dark"
+                      )}
+                    >
+                      19.99$/<span className="text-xl">year</span>
+                    </div>
+                    <a
+                      href={isActive === "android" ? AndroidStore : AppleStore}
+                      target="_blank"
+                    >
+                      <div
+                        className={clsx(
+                          "lg:ml-16 lg:px-8 sm:px-4 px-4 lg:py-4 sm:py-2 py-2  lg:rounded-xl sm:rounded-lg rounded-lg lg:text-base sm:text-xs text-xs font-bold",
+                          isActiveButton === "yearly"
+                            ? "bg-[#ffc200] text-primary-dark"
+                            : " bg-primary-dark text-primary-main"
+                        )}
+                      >
+                        Get Started
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </Grid>
