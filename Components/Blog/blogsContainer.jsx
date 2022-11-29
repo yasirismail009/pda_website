@@ -11,6 +11,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 const useStyles = makeStyles({
   root: {
     borderRadius: "20px",
+    overflow: "hidden",
   },
   main: {
     backgroundColor: "#173371 !important",
@@ -89,7 +90,7 @@ function BlogsContainer(props) {
           hasMore={hasMore}
           scrollableTarget="scrollableDiv"
           loader={
-            <div className="flex flex-col justify-center items-center w-full">
+            <div className="flex flex-col justify-center items-center w-full overflow-hidden">
               <CircularProgress />
               <p className="text-primary-main">News Loading ...</p>
             </div>

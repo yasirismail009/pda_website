@@ -23,7 +23,7 @@ export default function News() {
                 effecting millions of users worldwide.
               </p>
             </div>
-            <Link href="/blogs/?lead=123">
+            <Link href="/blogs.html?lead=123">
               <div className=" w-60 flex flex-row items-center justify-center cursor-pointer font-bold text-sm lg:px-6 sm:px-8 px-8 lg:py-2  sm:py-2 py-2 lg:mb-0 sm:mb-8 mb-8 text-primary-main bg-primary-dark hover:bg-primary-card   rounded-xl shadow-2xl">
                 <p className="lg:text-lg sm:text-base text-base font-semibold">
                   Explore More

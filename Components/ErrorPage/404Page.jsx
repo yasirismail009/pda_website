@@ -5,9 +5,9 @@ import Mockups from "../../Assets/noData.json";
 export default function Error() {
   return (
     <div className="w-full">
-      <d className="lg:text-6xl sm:text-4xl text-4xl text-center text-primary-dark font-bold lg:py-10">
+      <p className="w-full lg:text-6xl sm:text-4xl text-4xl text-center text-primary-dark font-bold lg:py-10">
         Error Page
-      </d>
+      </p>
 
       <div className="lg:block sm:hidden hidden">
         <Lottie

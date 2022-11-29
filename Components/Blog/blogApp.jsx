@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 function BlogContainer(props) {
   const classes = useStyles();
   return (
-    <div className={`${classes.root} bg-primary-dark`}>
+    <div className={`${classes.root} bg-primary-dark overflow-hidden`}>
       <Header />
       <BlogsContainer />
     </div>

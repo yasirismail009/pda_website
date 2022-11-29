@@ -171,7 +171,7 @@ export default function SwipeableTemporaryDrawer() {
 
             <ListItemText>
               {router.pathname === "/" ? (
-                <Link href="/blogs?lead=124">
+                <Link href="/blogs.html?lead=124">
                   <div className="flex justify-left items-center py-2 ">
                     <p className=" text-base font-semibold ml-1 text-primary-dark">
                       Security News
@@ -179,7 +179,7 @@ export default function SwipeableTemporaryDrawer() {
                   </div>
                 </Link>
               ) : (
-                <Link href="/blogs/?lead=123">
+                <Link href="/blogs.html?lead=123">
                   <div className="flex justify-left items-center py-2 border-b-2">
                     <p className=" text-base font-semibold ml-1 text-primary-dark">
                       Security News

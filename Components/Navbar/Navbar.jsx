@@ -120,7 +120,7 @@ export default function MainNavbar() {
                   Pricing
                 </p>
               </LinkS>
-            ) : (
+            ) : router.pathname === "/contact" ? null : (
               <LinkS
                 to="pricing"
                 smooth={true}
@@ -157,7 +157,7 @@ export default function MainNavbar() {
               </Link>
             )}
             {router.pathname === "/" ? (
-              <Link href="/blogs?lead=124">
+              <Link href="/blogs.html?lead=124">
                 <p
                   className="cursor-pointer text-white lg:text-base md:text-base  font-bold lg:block  sm:hidden hidden"
                   style={{ color: "#173371" }}
@@ -166,9 +166,9 @@ export default function MainNavbar() {
                 </p>
               </Link>
             ) : (
-              <Link href="/blogs?lead=124">
+              <Link href="/blogs.html?lead=124">
                 <p
-                  className="cursor-pointer text-white lg:text-base md:text-base  font-semibold lg:block  sm:hidden hidden"
+                  className="cursor-pointer text-white lg:text-base md:text-base  font-bold lg:block  sm:hidden hidden"
                   style={{ color: "#173371" }}
                 >
                   Security News

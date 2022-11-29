@@ -18,7 +18,7 @@ export default function LandingDetails(props) {
     <div
       id="features"
       className={clsx(
-        "w-full lg:mb-0  sm:px-1 px-1 lg:rounded-2xl sm:rounded-none rounded-none pt-8",
+        "w-full lg:mb-0  sm:px-4 px-4 lg:rounded-2xl sm:rounded-none rounded-none pt-8",
         MapData.theme === "light"
           ? "bg-primary-main text-primary-dark"
           : "bg-primary-dark text-primary-main"

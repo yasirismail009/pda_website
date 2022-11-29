@@ -12,7 +12,7 @@ export default function ServicesInfo() {
   console.log(FeaturesDetails);
   console.log(MapData);
   return (
-    <div className="lg:pt-0 sm:pt-16 pt-16 ">
+    <div className="lg:pt-0 sm:pt-0 pt-0 ">
       {MapData?.map((val) => (
         <LandingDetails MapData={val} id={id} />
       ))}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://privacydefender.app/</loc>
+  <lastmod>2022-11-29T14:56:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/app_guide</loc>
+  <lastmod>2022-11-29T14:56:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/features?id=android</loc>
+  <lastmod>2022-11-29T14:56:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/features?id=ios</loc>
+  <lastmod>2022-11-29T14:56:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/PrivacyPolicy/index.html</loc>
+  <lastmod>2022-06-15T07:18:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/termsconditions</loc>
+  <lastmod>2022-11-29T14:56:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/PrivacyPolicy/</loc>
+  <lastmod>2022-06-15T07:18:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/License</loc>
+  <lastmod>2022-11-29T14:56:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/cookiespolicy</loc>
+  <lastmod>2022-11-29T14:56:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/contact</loc>
+  <lastmod>2022-11-16T15:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://privacydefender.app/blog.html?lead=124</loc>
+  <lastmod>2022-11-29T14:56:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

@@ -61,9 +61,12 @@ export default function FeedbackComponent() {
   };
   useEffect(() => {}, []);
   return (
-    <div className="w-full flex justify-end items-end mt-20" id="feedback">
-      <div className="bg-primary-dark lg:w-2/4 sm:w-full w-full p-8 lg:px-20 rounded-xl shadow-inner">
-        <p className="text-4xl text-primary-main font-bold mb-2">Feedback</p>
+    <div
+      className="w-full flex justify-center items-center mt-20 lg:p-24 sm:p-4 p-4 lg:pt-24 sm:pt-20 pt-20 lg:pb-0 sm:pb-20 pb-20"
+      id="feedback"
+    >
+      <div className="bg-primary-dark lg:w-2/3 sm:w-full w-full p-8 lg:px-20 rounded-xl shadow-inner">
+        <p className="text-4xl text-primary-main font-bold mb-2">Contact Us</p>
         <p className="ml-4 text-lg text-primary-main font-medium mb-4">
           Tells us what we can improve for you
         </p>
@@ -97,7 +100,7 @@ export default function FeedbackComponent() {
                 <div class="lg:mb-6 sm:mb-4 mb-4">
                   <label
                     for="email"
-                    class="block mb-2 text-sm font-medium text-primary-main dark:text-white"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Email <span className="text-[#ffc200]">*</span>
                   </label>
@@ -121,11 +124,11 @@ export default function FeedbackComponent() {
             <div class="lg:mb-6 sm:mb-6 mb-6">
               <label
                 for="message"
-                class="block mb-2 text-sm font-medium text-primary-main dark:text-white"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Message<span className="text-[#ffc200]">*</span>
               </label>
-              <input
+              <textarea
                 type="text"
                 id="message"
                 name="message"

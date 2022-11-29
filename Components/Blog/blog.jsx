@@ -10,6 +10,7 @@ const useStyles = makeStyles({
     width: "100%",
     backgroundColor: "#173371 !important",
     borderRadius: "20px",
+    overflow: "hidden",
   },
   image: {
     width: "400px",
@@ -50,7 +51,7 @@ function Blog(props) {
 
   return (
     <div
-      className={`${classes.root} p-6 text-white flex lg:flex-row sm:flex-col flex-col justify-between items-start overflow-hidden`}
+      className={`${classes.root} p-6 text-white flex lg:flex-row sm:flex-col flex-col justify-between items-start `}
     >
       <div className="lg:w-2/4 sm:w-full w-full">
         <div className="flex lg:flex-row sm:flex-row flex-row space-x-4 mb-2 w-full">

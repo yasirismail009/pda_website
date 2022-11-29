@@ -7,7 +7,6 @@ import RatingIcon from "../../Assets/ratings.svg";
 import LanguageIcon from "../../Assets/languages.svg";
 import AppleStoreIcon from "../../Assets/apple_store.svg";
 import PlayStoreIcon from "../../Assets/play_store.svg";
-import { getAnalytics, logEvent } from "firebase/analytics";
 
 // const analytics = getAnalytics();
 // logEvent(analytics, "play_store_button", { name: "clicked" });
@@ -15,9 +14,9 @@ import { getAnalytics, logEvent } from "firebase/analytics";
 
 export default function LandingPage() {
   return (
-    <div id="home" className="w-full lg:40 sm:mb-20 mb-20 sm:px-4 px-4">
+    <div id="home" className="w-full lg:mb-40 sm:mb-20 mb-20 sm:px-4 px-4">
       <div className="w-full lg:flex md:flex flex-col sm:block block lg:h-screen sm:h-full h-full items-center justify-center lg:mt-2 sm:mt-0 mt-0">
-        <div className="w-full flex items-center justify-center lg:ml-6 lg:px-[500px] lg:mt-36 sm:mt-28 mt-28">
+        <div className="w-full flex items-center justify-center lg:ml-6 lg:px-[500px] lg:mt-36 sm:mt-20 mt-20">
           <Image src={LandingImg} alt="Privacy Defender App" priority />
         </div>
         <div className="lg:text-4xl sm:text-4xl text-4xl font-bold lg:text-left sm:text-center text-center text-primary-dark pb-24 lg:mt-8 sm:mt-8 mt-8">
