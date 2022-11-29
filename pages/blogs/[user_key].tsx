@@ -1,16 +1,6 @@
 import React from "react";
-// import makeStyles from "@mui/material";
 import BlogApp from "../../components/blog/blogApp";
 import Head from "next/head";
-
-// const useStyles = makeStyles({
-//   root: {
-//     backgroundColor: "#173371 !important",
-//     height: "100vh",
-//     width: "100vw",
-//     overflowX: "hidden",
-//   },
-// });
 
 function Blog() {
   return (

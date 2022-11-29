@@ -22,11 +22,11 @@ export default function Services() {
   }, []);
   return (
     <div
-      className="flex flex-col justify-center items-center w-full h-full bg-primary-dark lg:p-24 sm:p-4 p-4"
+      className="flex flex-col justify-center items-center w-full h-full bg-primary-dark lg:p-24 sm:p-2 p-2"
       id="services"
     >
-      <div className="w-72 lg:mb-16 sm:mb-8 mb-8 lg:ml-8  lg:pt-0 sm:pt-16 pt-16">
-        <ul className="grid grid-flow-col text-center  bg-primary-card rounded-full p-1 ">
+      <div className="w-60 lg:mb-8 sm:mb-8 mb-8 lg:ml-8  lg:pt-0 sm:pt-16 pt-16">
+        <ul className="grid grid-flow-col text-center  bg-primary-card rounded-lg p-1 ">
           <li
             className="cursor-pointer"
             onClick={() => {
@@ -35,7 +35,7 @@ export default function Services() {
           >
             <p
               className={clsx(
-                "cursor-pointer flex justify-center  rounded-full lg:py-6 sm:py-4 py-4 font-bold",
+                "cursor-pointer flex justify-center  rounded-lg lg:py-3 sm:py-2 py-2 font-bold",
                 isActive === "android"
                   ? "bg-primary-main  text-primary-dark"
                   : "text-primary-main"
@@ -52,7 +52,7 @@ export default function Services() {
           >
             <p
               className={clsx(
-                "cursor-pointer flex justify-center  rounded-full lg:py-6 sm:py-4 py-4 font-bold",
+                "cursor-pointer flex justify-center  rounded-lg lg:py-3 sm:py-2 py-2 font-bold",
                 isActive === "ios"
                   ? "bg-primary-main  text-primary-dark"
                   : "text-primary-main"
@@ -64,17 +64,17 @@ export default function Services() {
         </ul>
       </div>
       <div>
-        <p className="lg:text-4xl sm:text-xl text-xl font-bold text-primary-main lg:ml-8 sm:ml-0 ml-0 mb-2">
-          What Services Do We Offer in app?
+        <p className="lg:text-4xl sm:text-xl text-xl font-bold text-primary-main lg:ml-8 sm:ml-0 ml-0 lg:mb-8 sm:mb-12 mb-12 ">
+          Included Services:
         </p>
-        <p className="lg:text-2xl sm:text-base text-base font-medium text-primary-text lg:ml-16 sm:ml-0 ml-0  lg:mb-16">
+        {/* <p className="lg:text-2xl sm:text-base text-base font-medium text-primary-text lg:ml-16 sm:ml-0 ml-0  ">
           Our services are defined by quality and commitment.
-        </p>
+        </p> */}
       </div>
       <div className="flex justify-center items-center w-full h-full bg-primary-dark ">
-        <Grid container className="w-full items-center justify-between ">
+        <Grid container className="w-full items-center  ">
           {ServiceData?.map((val) => (
-            <Grid item lg={3} xs={12}>
+            <Grid item lg={2} xs={6}>
               <ServiceCard AndroidData={val} />
             </Grid>
           ))}

@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Pricing from "../Components/Pricing/index";
 import FeedbackModule from "../Components/Feedback/index";
 import News from "../Components/News/index";
+import Services from "../Components/Services/index";
 
 export default function FeaturesDetails() {
   return (
@@ -12,9 +13,6 @@ export default function FeaturesDetails() {
         <Navbar />
         <ServicesInfo />
       </div>
-
-      <Pricing />
-
       <FeedbackModule />
       <News />
     </div>

@@ -1,19 +1,20 @@
 import React from "react";
 import Header from "./header";
 import BlogsContainer from "./blogsContainer";
+import { makeStyles } from "@mui/styles";
 
-// const useStyles = makeStyles({
-//   root: {
-//     backgroundColor: "#173371 !important",
-//     minHeight: "100vh",
-//     width: "100vw",
-//     overflowX: "hidden",
-//   },
-// });
+const useStyles = makeStyles({
+  root: {
+    minHeight: "100vh",
+    width: "100vw",
+    overflowX: "hidden",
+  },
+});
 
 function BlogContainer(props) {
+  const classes = useStyles();
   return (
-    <div className="bg-primary-dark min-h-screen  overflow-hidden">
+    <div className={`${classes.root} bg-primary-dark`}>
       <Header />
       <BlogsContainer />
     </div>

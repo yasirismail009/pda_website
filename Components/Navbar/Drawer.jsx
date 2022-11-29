@@ -211,7 +211,9 @@ export default function SwipeableTemporaryDrawer() {
             <p className="text-xs font-bold mb-4 text-primary-dark">
               Powered By
             </p>
-            <Image alt="Pligence" src={PligenceLogo} />
+            <a href="https://pligence.com/" target="blank">
+              <Image alt="Pligence" src={PligenceLogo} />
+            </a>
           </div>
         </ListItem>
       </List>

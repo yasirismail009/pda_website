@@ -39,7 +39,7 @@ export default function Design() {
                   <div className="flex flex-row lg:ml-4 sm:ml-0 ml-0">
                     <Image src={star} alt="downloads" />
                     <p className="text-[#ffc200] lg:text-3xl sm:text-xl text-xl  font-bold ml-4">
-                      4.9
+                      4.8
                     </p>
                     <p className="text-primary-main font-bold lg:text-base sm:text-xs text-xs mt-4 ml-2">
                       Rating

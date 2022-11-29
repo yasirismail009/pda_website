@@ -6,15 +6,27 @@ import DownloadIcon from "../../Assets/downloads.svg";
 import RatingIcon from "../../Assets/ratings.svg";
 import LanguageIcon from "../../Assets/languages.svg";
 import AppleStoreWhiteIcon from "../../Assets/apple_store_white.svg";
+import AppleStoreIcon from "../../Assets/apple_store.svg";
 import PlayStoreIcon from "../../Assets/play_store.svg";
+import PlayStoreWhiteIcon from "../../Assets/play_store_white.svg";
+import clsx from "clsx";
 
 export default function LandingDetails(props) {
   const MapData = props.MapData;
+  const id = props.id;
   return (
-    <div id="home" className="w-full lg:mb-5 sm:px-4 px-4">
-      <div className="w-full lg:flex md:flex flex-col sm:block block lg:h-screen sm:h-full h-full items-center justify-center lg:mt-2 sm:mt-0 mt-0">
+    <div
+      id="features"
+      className={clsx(
+        "w-full lg:mb-0  sm:px-1 px-1 lg:rounded-2xl sm:rounded-none rounded-none pt-8",
+        MapData.theme === "light"
+          ? "bg-primary-main text-primary-dark"
+          : "bg-primary-dark text-primary-main"
+      )}
+    >
+      <div className="w-full lg:flex md:flex flex-col sm:block block lg:h-screen sm:h-full h-full items-center justify-center lg:mt-0 sm:mt-0 mt-0 ">
         <Fade bottom cascade>
-          <div className="lg:text-6xl sm:text-4xl text-4xl font-bold lg:text-left sm:text-center text-center text-primary-dark mb-4 lg:mt-32 sm:mt-8 mt-8">
+          <div className="lg:text-5xl sm:text-2xl text-2xl font-bold lg:text-left sm:text-center text-center mb-4 lg:mt-32 sm:mt-8 mt-8">
             {MapData?.first}{" "}
             <span className="text-[#ffc200]"> {MapData?.sec}</span>
             {MapData?.third}
@@ -24,10 +36,10 @@ export default function LandingDetails(props) {
             <div className="lg:mb-0 sm:mb-4 mb-4">
               <div className="flex flex-row lg:ml-4 sm:ml-0 ml-0">
                 <Image src={DownloadIcon} alt="downloads" />
-                <p className="text-[#ffc200] lg:text-5xl sm:text-2xl text-2xl font-bold lg:ml-4 sm:ml-2 ml-2">
+                <p className="text-[#ffc200] lg:text-4xl sm:text-2xl text-2xl font-bold lg:ml-4 sm:ml-2 ml-2">
                   50K+
                 </p>
-                <p className="text-primary-dark font-bold lg:text-base sm:text-xs text-xs mt-4 lg:ml-2 sm:ml-1 ml-1">
+                <p className=" font-bold lg:text-base sm:text-xs text-xs mt-4 lg:ml-2 sm:ml-1 ml-1">
                   Downloads
                 </p>
               </div>
@@ -35,39 +47,52 @@ export default function LandingDetails(props) {
             <div className="lg:mb-0 sm:mb-2 mb-2 lg:ml-0 sm:ml-2 ml-2">
               <div className="flex flex-row lg:ml-4 sm:ml-0 ml-0">
                 <Image src={RatingIcon} alt="downloads" />
-                <p className="text-[#ffc200] lg:text-5xl sm:text-2xl text-2xl  font-bold ml-4">
-                  4.9
+                <p className="text-[#ffc200] lg:text-4xl sm:text-2xl text-2xl  font-bold ml-4">
+                  4.8
                 </p>
-                <p className="text-primary-dark font-bold lg:text-base sm:text-xs text-xs mt-4 ml-2">
+                <p className=" font-bold lg:text-base sm:text-xs text-xs mt-4 ml-2">
                   Rating
                 </p>
               </div>
             </div>
-            <div>
-              <div className="flex flex-row lg:ml-4 sm:ml-2 ml-2">
-                <Image src={LanguageIcon} alt="downloads" />
-                <p className="text-[#ffc200] lg:text-5xl sm:text-2xl text-2xl  font-bold ml-4">
-                  6+
-                </p>
-                <p className="text-primary-dark font-bold lg:text-base sm:text-xs text-xs mt-4 ml-2">
-                  Languages
-                </p>
+            {id === "android" ? (
+              <div>
+                <div className="flex flex-row lg:ml-4 sm:ml-2 ml-2">
+                  <Image src={LanguageIcon} alt="downloads" />
+                  <p className="text-[#ffc200] lg:text-4xl sm:text-2xl text-2xl  font-bold ml-4">
+                    6+
+                  </p>
+                  <p className=" font-bold lg:text-base sm:text-xs text-xs mt-4 ml-2">
+                    Languages
+                  </p>
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
           <div className="flex flex-row justify-center items-center my-8   lg:mr-8">
-            {MapData?.store === "android" ? (
+            {id === "android" ? (
               <a
                 href="https://play.google.com/store/apps/details?id=com.pligence.privacydefender"
                 target="_blank"
               >
-                <div className="flex flex-row items-center justify-center cursor-pointer font-bold text-sm lg:px-10 sm:px-5 px-5 lg:py-4  sm:py-1 py-1 text-primary-main bg-primary-dark hover:bg-primary-card   rounded-xl shadow-2xl">
+                <div
+                  className={clsx(
+                    "flex flex-row items-center justify-center cursor-pointer font-bold text-sm lg:px-6 sm:px-5 px-5 lg:py-2  sm:py-1 py-1    rounded-xl shadow-2xl",
+                    MapData.theme === "light"
+                      ? "text-primary-main bg-primary-dark hover:bg-primary-card"
+                      : "text-primary-dark bg-primary-main hover:bg-primary-text"
+                  )}
+                >
                   <Image
-                    src={PlayStoreIcon}
+                    src={
+                      MapData.theme === "light"
+                        ? PlayStoreIcon
+                        : PlayStoreWhiteIcon
+                    }
                     alt="Privacy Defender App"
-                    className="lg:p-0 sm:p-1 p-1"
+                    className="lg:p-1 sm:p-1 p-1"
                   />
-                  <p className="lg:text-2xl sm:text-base text-base font-semibold ml-4">
+                  <p className="lg:text-base sm:text-base text-base font-semibold ml-4">
                     Play Store
                   </p>
                 </div>
@@ -77,13 +102,24 @@ export default function LandingDetails(props) {
                 href="https://apps.apple.com/us/app/privacy-defender/id1588734793"
                 target="_blank"
               >
-                <div className="flex flex-row items-center justify-center cursor-pointer font-bold text-sm lg:px-10 sm:px-5 px-5 lg:py-4  sm:py-1 py-1 text-primary-main bg-primary-dark hover:bg-primary-card   rounded-xl shadow-2xl">
+                <div
+                  className={clsx(
+                    "flex flex-row items-center justify-center cursor-pointer font-bold text-sm lg:px-6 sm:px-5 px-5 lg:py-2  sm:py-1 py-1   rounded-xl shadow-2xl",
+                    MapData.theme === "light"
+                      ? "text-primary-main bg-primary-dark hover:bg-primary-card"
+                      : "text-primary-dark bg-primary-main hover:bg-primary-text"
+                  )}
+                >
                   <Image
-                    src={AppleStoreWhiteIcon}
+                    src={
+                      MapData.theme === "light"
+                        ? AppleStoreWhiteIcon
+                        : AppleStoreIcon
+                    }
                     alt="Privacy Defender App"
-                    className="lg:p-0 sm:p-1 p-1"
+                    className="lg:p-1 sm:p-1 p-1"
                   />
-                  <p className="lg:text-2xl sm:text-base text-base font-semibold ml-4">
+                  <p className="lg:text-base sm:text-base text-base font-semibold ml-4">
                     Apple Store
                   </p>
                 </div>

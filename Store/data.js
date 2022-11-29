@@ -64,88 +64,91 @@ import LogsDetails from "../Assets/logs_details.png";
 export const ServicesData = {
   android: [
     {
+      title: "Malware Protection",
+      img: MaliciousApp,
+      details:
+        " It provides protection by analyzing mobile application behavior and identifies suspicious and malicious apps.   ",
+      url: "?id=android",
+    },
+    {
+      title: "Anti-Virus",
+      img: AntiVirus,
+      details:
+        "  Detects and blocks viruses and harmfull files. Performs Real-time scans when malicious files are downloaded.   ",
+      url: "?id=android",
+    },
+    {
+      title: "Surveillance Protection",
+      img: Surveillance,
+      details:
+        "  Monitors and blocks Mobile Apps from accessing Mobile phone sensors such as Microphone and Camera.   ",
+      url: "?id=android",
+    },
+    {
       title: "Ads Blocker",
       img: AdsBloker,
       details:
-        " Blocks annoying Ads, Ad Trackers, and pop-ups. It can block inApp ads of Chrome, YouTube and all web browsers and Mobile Apps.",
-      url: "?id=adsblocker_android",
+        " Blocks annoying Ads, Ad Trackers, and pop-ups. Ad Blocker blocks In-App ads for all web browsers and Apps.",
+      url: "?id=android",
     },
     {
       title: "Malicious Traffic Block",
       img: MaliciousTraffic,
       details:
         " Provides Behavior Analysis based automated protection for Mobile Phone Users from online dangers. ",
-      url: "?id=malicioustraffic_android",
+      url: "?id=android",
     },
+
     {
-      title: "App Usage Control",
-      img: UsageAccess,
+      title: "Web Guard",
+      img: WebGuard,
       details:
-        " User can allow or disallow internet acess for individual apps. This feature can be used for playing offline games and for apps that do not require internet access. ",
-      url: "?id=usagecontrol_android",
-    },
-    {
-      title: "App Traffic Control",
-      img: TrafficControl,
-      details:
-        " It monitors and displays traffic of each app. User can control allow or disallow links for each app.  ",
-      url: "?id=apptraffic_android",
-    },
-    {
-      title: "App Permissions",
-      img: AppPermission,
-      details:
-        " It shows all permissions and dangerous permissions requested by each app.   ",
-      url: "?id=apppermission_android",
-    },
-    {
-      title: "Malicious App Protection",
-      img: MaliciousApp,
-      details:
-        " It provides protection by analyzing mobile application behavior and identifies suspicious and malicious apps.   ",
-      url: "?id=maliciousapp_android",
-    },
-    {
-      title: "Security News",
-      img: SecurityNews,
-      details:
-        "  Security news provides latest security and privacy news. So user can stay informed about online security threats & frauds.   ",
-      url: "?id=security_news",
+        "Provides safe online browsing experience by blocking dangerous websites that steals login and financial data.",
+      url: "?id=android",
     },
     {
       title: "Apks Threat Protection",
       img: ApkThreat,
       details:
-        "  It analyzes and detects all apk files that gets downloaded on the mobile phone.   ",
-      url: "?id=apk_protection",
+        "  It analyzes and detects all the malicious apk files that gets downloaded and installed on the mobile phone.   ",
+      url: "?id=android",
     },
     {
-      title: "Surveillance Protection",
-      img: Surveillance,
+      title: "App Traffic Control",
+      img: TrafficControl,
       details:
-        "  Monitors and blocks Mobile Apps from accessing Mobile phone sensors such as Microphone, Camera, and Location services.   ",
-      url: "?id=surveillance_protection",
+        " It monitors and displays traffic of each App to the Internet. User can control and allow or block traffic from each App.  ",
+      url: "?id=android",
     },
     {
-      title: "Web Guard",
-      img: WebGuard,
+      title: "App Usage Control",
+      img: UsageAccess,
       details:
-        "  Provides a safe browsing experience by blocking dangerous websites that steal personal login credentials and financial data.   ",
-      url: "?id=web_guard",
+        " User can allow or disallow internet acess for individual Apps. This feature helps control the expensive internet usage.",
+      url: "?id=android",
     },
+
+    {
+      title: "App Permissions",
+      img: AppPermission,
+      details:
+        " It allows the User to control all dangerous and invasive permissions requested and assigned to each App.   ",
+      url: "?id=android",
+    },
+
     {
       title: "Secure Vault",
       img: SecureVault,
       details:
-        "  Provides additional authentication and encryption to safeguard personal Pictures, Video and Files on your mobile phone. ",
-      url: "?id=secure_vault",
+        "  Provides authentication and encryption to safeguard personal Pictures, Video and Files on your mobile phone. ",
+      url: "?id=android",
     },
     {
-      title: "Anti-Virus",
-      img: AntiVirus,
+      title: "Security News",
+      img: SecurityNews,
       details:
-        "  Detects and blocks viruses and harmfull files. Real-time scanning feature detects malicious files when they get downloaded.   ",
-      url: "?id=anti_virus",
+        "  Provides the latest security and privacy news, so Users can stay informed about online security threats & frauds.   ",
+      url: "?id=android",
     },
   ],
   ios: [
@@ -153,57 +156,57 @@ export const ServicesData = {
       title: "Ads Blocker",
       img: AdsBloker,
       details:
-        " Blocks annoying Ads, Ad Trackers, and pop-ups. It can block inApp ads of Chrome, YouTube and all web browsers and Mobile Apps.",
-      url: "?id=adsblocker_ios",
+        " Blocks annoying Ads, Ad Trackers, and pop-ups. Ad Blocker blocks In-App ads for all web browsers and Apps.",
+      url: "?id=ios",
     },
     {
       title: "Malicious Traffic Block",
       img: MaliciousTraffic,
       details:
         " Provides Behavior Analysis based automated protection for Mobile Phone Users from online dangers. ",
-      url: "?id=malicioustraffic_ios",
+      url: "?id=ios",
     },
     {
       title: "Password Manager",
       img: PasswordManager,
       details:
-        " Securely stores your passwords, passphrases and login information. user can access them with the help of master password. ",
-      url: "?id=password_manager",
+        " Securely stores your passwords and login details, accessible through a master password or biometrics. ",
+      url: "?id=ios",
     },
     {
       title: "Notes Manager",
       img: NotesManager,
       details:
-        " Secures your personal data such as photos, videos, banking information and business data by securly encrypting them.  ",
-      url: "?id=notes_manager",
+        " Secures your personal notes such as banking, health and licensing information by encrypting them.  ",
+      url: "?id=ios",
     },
     {
-      title: "Traffic Usage Control",
+      title: "User Defined Blacklist",
       img: TrafficUsage,
       details:
-        " It monitors and displays traffic of each app. User can control traffic for each app.    ",
-      url: "?id=traffic_usage",
+        " Provides details on the User defined blacklisted URL's and IP addresses for the traffic generated from the Mobile.  ",
+      url: "?id=ios",
     },
     {
-      title: "Whitelist Url Management",
+      title: "User Defined Whitelist",
       img: Whitelist,
       details:
-        " Provides Behavior Analysis based automated protection for Mobile Phone Users from online dangers. With the control to block and unblock such .   ",
-      url: "?id=whitelist",
+        " Provides details on the User defined whitelisted URL's and IP addresses for the traffic generated from the Mobile. ",
+      url: "?id=ios",
     },
     {
-      title: "Logs Monitoring",
+      title: "Traffic Logs",
       img: Logs,
       details:
-        "  It monitors and displays traffic of each app. User can control allow or disallow links for each app.    ",
-      url: "?id=logs",
+        "  It monitors and displays traffic from the Mobile phone to the Internet. Users can control and allow or block traffic.  ",
+      url: "?id=ios",
     },
     {
       title: "Security News",
       img: SecurityNews,
       details:
-        "  Security news provides latest security and privacy news. So user can stay informed about online security threats & frauds.   ",
-      url: "?id=security_news",
+        "  Provides the latest security and privacy news, so Users can stay informed about online security threats & frauds. ",
+      url: "?id=ios",
     },
   ],
 };
@@ -512,232 +515,251 @@ export const AppGuideData = [
   },
 ];
 export const FeaturesDetails = {
-  adsblocker_android: {
-    first: "Block",
-    sec: "Ads",
-    third: " and",
-    fourth: "Ad Tracking",
-    img: AdsDetails,
-    store: "android",
-    title: " Ads Blocker",
-    details:
-      " Blocks annoying Ads, Ad Trackers, and pop-ups. It can block inApp ads of Chrome, YouTube and all web browsers and Mobile Apps.",
-    youtube: "8FFIQrD9pYs",
-  },
-  malicioustraffic_android: {
-    first: "Complete Online",
-    sec: "Protection",
-    third: " Block",
-    fourth: "Malicious sites",
-    img: MalciousSiteDetails,
-    store: "android",
-    title: " Malicious Traffic Block",
-    details:
-      " Provides Behavior Analysis based automated protection for Mobile Phone Users from online dangers. ",
-    youtube: "HfbvjjBZfLc",
-  },
-  usagecontrol_android: {
-    first: "Control",
-    sec: "Data",
-    third: " and",
-    fourth: "Wifi Usage",
-    img: UsagePermissionDetails,
-    store: "android",
-    title: " App Usage Control",
-    details:
-      " User can allow or disallow internet acess for individual apps. This feature can be used for playing offline games and for apps that do not require internet access. ",
-    youtube: "tkPU_46326Y",
-  },
-  apptraffic_android: {
-    first: "Control",
-    sec: "App Traffic",
-    third: " and",
-    fourth: "Logs",
-    img: AppTrafficDetails,
-    store: "android",
-    title: " App Traffic Control",
-    details:
-      " It monitors and displays traffic of each app. User can control allow or disallow links for each app.  ",
-    youtube: "aagcoFdlOVQ",
-  },
-  apppermission_android: {
-    first: "Control",
-    sec: "Dangerous ",
-    third: " Permissions",
-    fourth: "",
-    img: UsagePermissionDetails,
-    store: "android",
-    title: " App Permissions",
-    details:
-      " It shows all permissions and dangerous permissions requested by each app.   ",
-    youtube: "tkPU_46326Y",
-  },
-  maliciousapp_android: {
-    first: "Detects",
-    sec: "Malicious App",
-    third: " &",
-    fourth: "Block",
-    img: MalwareDetails,
-    store: "android",
-    title: " Malicious App Protection",
-    details:
-      " It provides protection by analyzing mobile application behavior and identifies suspicious and malicious apps.   ",
-    youtube: "zHISM-JJ0cY",
-  },
-  security_news: {
-    first: "Stay",
-    sec: "Alert",
-    third: " by",
-    fourth: "Threats Attacks",
-    img: NewsDetails,
-    store: "android",
-    title: " Security News",
-    details:
-      "  Security news provides latest security and privacy news. So user can stay informed about online security threats & frauds.   ",
-    youtube: "tkPU_46326Y",
-  },
-  apk_protection: {
-    first: "Detects",
-    sec: "Malicious Apks",
-    third: " &",
-    fourth: "Block",
-    img: ApksDetails,
-    store: "android",
-    title: " Apks Threat Protection",
-    details:
-      "  It analyzes and detects all apk files that gets downloaded on the mobile phone.   ",
-    youtube: "zHISM-JJ0cY",
-  },
-  surveillance_protection: {
-    first: "Block",
-    sec: " Spyware",
-    third: " &",
-    fourth: "Monitor Apps",
-    img: SurveillanceDetails,
-    store: "android",
-    title: " Surveillance Protection",
-    details:
-      "  Monitors and blocks Mobile Apps from accessing Mobile phone sensors such as Microphone, Camera, and Location services.   ",
-    youtube: "YkeReUe14cA",
-  },
-  web_guard: {
-    first: "Browse the web",
-    sec: "Safely",
-    third: " & block",
-    fourth: "Phishing Sites",
-    img: WebDetails,
-    store: "android",
-    title: " Web Guard",
-    details:
-      "  Provides a safe browsing experience by blocking dangerous websites that steal personal login credentials and financial data.   ",
-    youtube: "HfbvjjBZfLc",
-  },
-  secure_vault: {
-    first: "Securely store",
-    sec: "Photos, Videos",
-    third: " and",
-    fourth: "Files",
-    img: VaultDetails,
-    store: "android",
-    title: " Secure Vault",
-    details:
-      "  Provides additional authentication and encryption to safeguard personal Pictures, Video and Files on your mobile phone. ",
-    youtube: "-wzliWkGbsY",
-  },
-  anti_virus: {
-    first: "Detects &",
-    sec: "Blocks Viruses",
-    third: " and",
-    fourth: "Harmfull Files",
-    img: AntivirusDetails,
-    store: "android",
-    title: " Anti-Virus",
-    details:
-      "  Detects and blocks viruses and harmfull files. Real-time scanning feature detects malicious files when they get downloaded.   ",
-    youtube: "zHISM-JJ0cY",
-  },
-  adsblocker_ios: {
-    first: "Block",
-    sec: "Ads",
-    third: " and",
-    fourth: "Ad Tracking",
-    img: AdsIosDetails,
-    store: "ios",
-    title: " Ads Blocker",
-    details:
-      " Blocks annoying Ads, Ad Trackers, and pop-ups. It can block inApp ads of Chrome, YouTube and all web browsers and Mobile Apps.",
-    youtube: "8FFIQrD9pYs",
-  },
-  malicioustraffic_ios: {
-    first: "Complete Online",
-    sec: "Protection",
-    third: " Block",
-    fourth: "Malicious sites",
-    img: MalciousSiteIosDetails,
-    store: "ios",
-    title: " Malicious Traffic Block",
-    details:
-      " Provides Behavior Analysis based automated protection for Mobile Phone Users from online dangers. ",
-    youtube: "HfbvjjBZfLc",
-  },
-  password_manager: {
-    first: "Securely",
-    sec: "Store",
-    third: "Your",
-    fourth: "login Credentials",
-    img: PassNotesDetails,
-    store: "ios",
-    title: " Password Manager",
-    details:
-      " Securely stores your passwords, passphrases and login information. user can access them with the help of master password. ",
-    youtube: "HXYt-08WqTM",
-  },
-  notes_manager: {
-    first: "Securely",
-    sec: "Store",
-    third: " Your",
-    fourth: "Personal Notes",
-    img: PassNotesDetails,
-    store: "ios",
-    title: " Notes Manager",
-    details:
-      " Secures your personal data such as photos, videos, banking information and business data by securly encrypting them.  ",
-    youtube: "aagcoFdlOVQ",
-  },
-  traffic_usage: {
-    first: "Custom",
-    sec: "Blockage",
-    third: " of",
-    fourth: "Domain or Sites",
-    img: UserDefinedDetails,
-    store: "ios",
-    title: " Traffic Usage Control",
-    details:
-      " It monitors and displays traffic of each app. User can control traffic for each app.    ",
-    youtube: "W1Yl_m65-J0",
-  },
-  whitelist: {
-    first: "Custom",
-    sec: "Whitelist",
-    third: " of",
-    fourth: "Ads & Urls",
-    img: WhitelistDetails,
-    store: "ios",
-    title: " Whitelist Url Management",
-    details:
-      " Provides Behavior Analysis based automated protection for Mobile Phone Users from online dangers. With the control to block and unblock such .   ",
-    youtube: "W1Yl_m65-J0",
-  },
-  logs: {
-    first: "Views",
-    sec: "Internet Activity",
-    third: " of Each",
-    fourth: "App",
-    img: LogsDetails,
-    store: "ios",
-    title: " Logs Monitoring",
-    details:
-      "  It monitors and displays traffic of each app. User can control allow or disallow links for each app.    ",
-    youtube: "W1Yl_m65-J0",
-  },
+  android: [
+    {
+      first: "Detect &",
+      sec: "Block",
+      third: " Malicious",
+      fourth: " Apps",
+      img: MalwareDetails,
+      theme: "light",
+      title: " Malicious App Protection",
+      details:
+        " It provides protection by analyzing mobile application behavior and identifies suspicious and malicious apps.   ",
+      youtube: "zHISM-JJ0cY",
+    },
+
+    {
+      first: "Detects &",
+      sec: "Blocks Viruses",
+      third: " and",
+      fourth: "Harmfull Files",
+      img: AntivirusDetails,
+      theme: "dark",
+      title: " Anti-Virus",
+      details:
+        "  Detects and blocks viruses and harmfull files. Real-time scanning feature detects malicious files when they get downloaded.   ",
+      youtube: "zHISM-JJ0cY",
+    },
+    {
+      first: "Block",
+      sec: " Spyware",
+      third: " &",
+      fourth: "Monitor Apps",
+      img: SurveillanceDetails,
+      theme: "light",
+      title: " Surveillance Protection",
+      details:
+        "  Monitors and blocks Mobile Apps from accessing Mobile phone sensors such as Microphone, Camera, and Location services.   ",
+      youtube: "YkeReUe14cA",
+    },
+    {
+      first: "Block",
+      sec: "Ads",
+      third: " and",
+      fourth: "Ad Tracking",
+      img: AdsDetails,
+      theme: "dark",
+      title: " Ads Blocker",
+      details:
+        " Blocks annoying Ads, Ad Trackers, and pop-ups. It can block inApp ads of Chrome, YouTube and all web browsers and Mobile Apps.",
+      youtube: "8FFIQrD9pYs",
+    },
+    {
+      first: "Complete Online",
+      sec: "Protection",
+      third: " Block",
+      fourth: "Malicious sites",
+      img: MalciousSiteDetails,
+      theme: "light",
+      title: " Malicious Traffic Block",
+      details:
+        " Provides Behavior Analysis based automated protection for Mobile Phone Users from online dangers. ",
+      youtube: "HfbvjjBZfLc",
+    },
+    {
+      first: "Browse the web",
+      sec: "Safely",
+      third: " & block",
+      fourth: "Phishing Sites",
+      img: WebDetails,
+      theme: "dark",
+      title: " Web Guard",
+      details:
+        "  Provides a safe browsing experience by blocking dangerous websites that steal personal login credentials and financial data.   ",
+      youtube: "HfbvjjBZfLc",
+    },
+    {
+      first: "Detects",
+      sec: "Malicious Apks",
+      third: " &",
+      fourth: "Block",
+      img: ApksDetails,
+      theme: "light",
+      title: " Apks Threat Protection",
+      details:
+        "  It analyzes and detects all apk files that gets downloaded on the mobile phone.   ",
+      youtube: "zHISM-JJ0cY",
+    },
+    {
+      first: "Control",
+      sec: "App Traffic",
+      third: " and",
+      fourth: "Logs",
+      img: AppTrafficDetails,
+      theme: "dark",
+      title: " App Traffic Control",
+      details:
+        " It monitors and displays traffic of each app. User can control allow or disallow links for each app.  ",
+      youtube: "aagcoFdlOVQ",
+    },
+    {
+      first: "Control",
+      sec: "Data",
+      third: " and",
+      fourth: "Wifi Usage",
+      img: UsagePermissionDetails,
+      theme: "light",
+      title: " App Usage Control",
+      details:
+        " User can allow or disallow internet acess for individual apps. This feature can be used for playing offline games and for apps that do not require internet access. ",
+      youtube: "tkPU_46326Y",
+    },
+
+    {
+      first: "Control",
+      sec: "Dangerous ",
+      third: " Permissions",
+      fourth: "",
+      img: UsagePermissionDetails,
+      theme: "dark",
+      title: " App Permissions",
+      details:
+        " It shows all permissions and dangerous permissions requested by each app.   ",
+      youtube: "tkPU_46326Y",
+    },
+    {
+      first: "Securely store",
+      sec: "Photos, Videos",
+      third: " and",
+      fourth: "Files",
+      img: VaultDetails,
+      theme: "light",
+      title: " Secure Vault",
+      details:
+        "  Provides additional authentication and encryption to safeguard personal Pictures, Video and Files on your mobile phone. ",
+      youtube: "-wzliWkGbsY",
+    },
+
+    {
+      first: "Stay",
+      sec: "Alert",
+      third: " by",
+      fourth: "Threats Attacks",
+      img: NewsDetails,
+      theme: "dark",
+      title: " Security News",
+      details:
+        "  Security news provides latest security and privacy news. So user can stay informed about online security threats & frauds.   ",
+      youtube: "tkPU_46326Y",
+    },
+  ],
+  ios: [
+    {
+      first: "Block",
+      sec: "Ads",
+      third: " and",
+      fourth: "Ad Tracking",
+      img: AdsIosDetails,
+      theme: "light",
+      title: " Ads Blocker",
+      details:
+        " Blocks annoying Ads, Ad Trackers, and pop-ups. It can block inApp ads of Chrome, YouTube and all web browsers and Mobile Apps.",
+      youtube: "8FFIQrD9pYs",
+    },
+    {
+      first: "Complete Online",
+      sec: "Protection",
+      third: " Block",
+      fourth: "Malicious sites",
+      img: MalciousSiteIosDetails,
+      theme: "dark",
+      title: " Malicious Traffic Block",
+      details:
+        " Provides Behavior Analysis based automated protection for Mobile Phone Users from online dangers. ",
+      youtube: "HfbvjjBZfLc",
+    },
+    {
+      first: "Securely",
+      sec: "Store",
+      third: "Your",
+      fourth: "login Credentials",
+      img: PassNotesDetails,
+      theme: "light",
+      title: " Password Manager",
+      details:
+        " Securely stores your passwords, passphrases and login information. user can access them with the help of master password. ",
+      youtube: "HXYt-08WqTM",
+    },
+    {
+      first: "Securely",
+      sec: "Store",
+      third: " Your",
+      fourth: "Personal Notes",
+      img: PassNotesDetails,
+      theme: "dark",
+      title: " Notes Manager",
+      details:
+        " Secures your personal data such as photos, videos, banking information and business data by securly encrypting them.  ",
+      youtube: "aagcoFdlOVQ",
+    },
+    {
+      first: "Custom",
+      sec: "Blockage",
+      third: " of",
+      fourth: "Domain or Sites",
+      img: UserDefinedDetails,
+      theme: "light",
+      title: " Traffic Usage Control",
+      details:
+        " It monitors and displays traffic of each app. User can control traffic for each app.    ",
+      youtube: "W1Yl_m65-J0",
+    },
+    {
+      first: "Custom",
+      sec: "Whitelist",
+      third: " of",
+      fourth: "Ads & Urls",
+      img: WhitelistDetails,
+      theme: "dark",
+      title: " Whitelist Url Management",
+      details:
+        " Provides Behavior Analysis based automated protection for Mobile Phone Users from online dangers. With the control to block and unblock such .   ",
+      youtube: "W1Yl_m65-J0",
+    },
+    {
+      first: "Views",
+      sec: "Internet Activity",
+      third: " of Each",
+      fourth: "App",
+      img: LogsDetails,
+      theme: "light",
+      title: " Logs Monitoring",
+      details:
+        "  It monitors and displays traffic of each app. User can control allow or disallow links for each app.    ",
+      youtube: "W1Yl_m65-J0",
+    },
+    {
+      first: "Stay",
+      sec: "Alert",
+      third: " by",
+      fourth: "Threats Attacks",
+      img: NewsDetails,
+      theme: "dark",
+      title: " Security News",
+      details:
+        "  Security news provides latest security and privacy news. So user can stay informed about online security threats & frauds.   ",
+      youtube: "tkPU_46326Y",
+    },
+  ],
 };

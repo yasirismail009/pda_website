@@ -25,7 +25,7 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="w-full h-full lg:mb-28 sm:mb-28 mb-28 ">
+    <div className="w-full h-full lg:mb-28 sm:mb-20 mb-20 ">
       <Carousel responsive={responsive}>
         {ReviewsData?.map((val) => (
           <RatingCards data={val} />

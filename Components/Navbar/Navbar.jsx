@@ -111,7 +111,7 @@ export default function MainNavbar() {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={50}
+                offset={80}
               >
                 <p
                   className="cursor-pointer lg:text-base md:text-base  font-bold lg:block  sm:hidden hidden"
@@ -127,7 +127,7 @@ export default function MainNavbar() {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-70}
+                offset={80}
               >
                 <p
                   className="cursor-pointer lg:text-base md:text-base  font-bold lg:block  sm:hidden hidden"
@@ -194,12 +194,13 @@ export default function MainNavbar() {
           </Grid>
           <Grid item lg={2} xs={0}>
             <div className="w-full flex justify-center">
-              <Image
-                src={PligenceLogo}
-                alt="Pligence"
-                width="130"
-                className="lg:block  sm:hidden hidden"
-              />
+              <a href="https://pligence.com/" target="blank">
+                <Image
+                  src={PligenceLogo}
+                  alt="Pligence"
+                  className="lg:block  sm:hidden hidden"
+                />
+              </a>
             </div>
           </Grid>
         </Grid>

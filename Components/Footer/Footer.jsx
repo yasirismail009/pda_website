@@ -52,7 +52,10 @@ export default function StickyFooter() {
           <div className="w-full flex flex-wrap justify-between items-center lg:mb-16 sm:mb-8 mb-8">
             <div>
               <p className="font-semibold mb-1">Powered by</p>
-              <Image src={PligenceWhite} alt="pligence" className="m-3" />
+              <a href="https://pligence.com/" target="blank">
+                {" "}
+                <Image src={PligenceWhite} alt="pligence" className="m-3" />
+              </a>
             </div>
             <Image src={PdaWhite} alt="Pda" className="m-3" />
           </div>

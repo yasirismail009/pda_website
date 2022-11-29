@@ -13,8 +13,8 @@ const Landing = () => {
       <div className="w-full lg:py-20 sm:py-0 py-0 lg:pt-0 sm:pt-20 pt-20 bg-primary-main">
         <Navbar />
         <LandingPage />
-        <p className="ml-8 text-primary-dark text-2xl font-bold text-center">
-          Some of our users reviews
+        <p className="lg:ml-8 sm:ml-0 ml-0 text-primary-dark text-2xl font-bold text-center mb-8">
+          Users Reviews
         </p>
         <RatingsTickerData />
       </div>

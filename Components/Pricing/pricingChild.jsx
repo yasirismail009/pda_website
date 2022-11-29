@@ -58,7 +58,7 @@ export default function PricingChild() {
       </div>
       <div className="w-full flex flex-col justify-center ite shadow-2xl rounded-3xl lg:py-8 sm:py-0 py-0 lg:px-16 sm:px-4 px-4">
         <div className="w-72 lg:mb-8 sm:mb-8 mb-8   lg:pt-0 sm:pt-4 pt-4">
-          <ul className="grid grid-flow-col text-center  bg-[#ECECEC] rounded-full p-1 ">
+          <ul className="grid grid-flow-col text-center  bg-[#ECECEC] rounded-lg p-1 ">
             <li
               className="cursor-pointer"
               onClick={() => {
@@ -67,7 +67,7 @@ export default function PricingChild() {
             >
               <p
                 className={clsx(
-                  "cursor-pointer flex justify-center  rounded-full lg:py-6 sm:py-4 py-4 font-bold",
+                  "cursor-pointer flex justify-center  rounded-lg lg:py-3 sm:py-2 py-2 font-bold",
                   isActive === "android"
                     ? "bg-primary-dark  text-primary-main"
                     : "text-primary-dark"
@@ -84,7 +84,7 @@ export default function PricingChild() {
             >
               <p
                 className={clsx(
-                  "cursor-pointer flex justify-center  rounded-full lg:py-6 sm:py-4 py-4 font-bold",
+                  "cursor-pointer flex justify-center  rounded-lg lg:py-3 sm:py-2 py-2 font-bold",
                   isActive === "ios"
                     ? "bg-primary-dark  text-primary-main"
                     : "text-primary-dark"
@@ -96,24 +96,32 @@ export default function PricingChild() {
           </ul>
         </div>
         <div className=" w-full h-full bg-primary-main ">
-          <Grid container spacing={2}>
+          <Grid
+            container
+            spacing={2}
+            className="lg:flex-wrap sm:flex-wrap-reverse flex-wrap-reverse  "
+          >
             <Grid item lg={5} xs={12}>
-              <div className="text-primary-dark text-lg font-bold lg:mb-0 sm:mb-2 mb-2">
-                Features
-              </div>
-              {mapData.map((val, key) => (
-                <div className="flex items-center">
-                  <div className="w-6">
-                    <Image src={val.img} alt={val.title} />
-                  </div>
-                  <div className="w-72 mb-2">
-                    <p className="mx-4 text-lg font-bold">{val.title}</p>
-                  </div>
-                  <div className="w-8">
-                    <Image src={val.pay} alt={val.title} />
-                  </div>
+              <div className="px-4">
+                <div className="text-primary-dark text-lg font-bold lg:mb-0 sm:mb-2 mb-2">
+                  Features
                 </div>
-              ))}
+                {mapData.map((val, key) => (
+                  <div className="flex items-center">
+                    <div className="w-6">
+                      <Image src={val.img} alt={val.title} />
+                    </div>
+                    <div className="w-72 mb-2">
+                      <p className="mx-4 lg:text-lg sm:text-sm text-sm font-bold">
+                        {val.title}
+                      </p>
+                    </div>
+                    <div className="lg:w-8 sm:w-5 w-5">
+                      <Image src={val.pay} alt={val.title} />
+                    </div>
+                  </div>
+                ))}
+              </div>
             </Grid>
             <Grid item lg={7} xs={12}>
               <div className="lg:mt-0 sm:mt-20 mt-20">
@@ -124,16 +132,16 @@ export default function PricingChild() {
                       ? "bg-primary-dark"
                       : "bg-primary-main"
                   )}
+                  onClick={(e) => {
+                    RadioButtonClick("free");
+                  }}
                 >
                   <input
                     checked={isActiveButton === "free" ? true : false}
                     id="free"
                     type="radio"
                     value=""
-                    onClick={(e) => {
-                      RadioButtonClick("free");
-                    }}
-                    className="w-8 h-8 text-[#ffc200] bg-gray-100 border-gray-300 focus:ring-[#ffc200] dark:focus:ring-[#ffc200] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    className="lg:block sm:hidden hidden w-8 h-8 text-[#ffc200] bg-gray-100 border-gray-300 focus:ring-[#ffc200] dark:focus:ring-[#ffc200] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
                   <div className="lg:flex sm:block block flex-row justify-center items-center">
                     <div
@@ -191,16 +199,16 @@ export default function PricingChild() {
                       ? "bg-primary-dark"
                       : "bg-primary-main"
                   )}
+                  onClick={(e) => {
+                    RadioButtonClick("monthly");
+                  }}
                 >
                   <input
                     checked={isActiveButton === "monthly" ? true : false}
                     id="monthly"
                     type="radio"
                     value=""
-                    onClick={(e) => {
-                      RadioButtonClick("monthly");
-                    }}
-                    className="w-8 h-8 text-[#ffc200] bg-gray-100 border-gray-300 focus:ring-[#ffc200] dark:focus:ring-[#ffc200] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    className="lg:block sm:hidden hidden  w-8 h-8 text-[#ffc200] bg-gray-100 border-gray-300 focus:ring-[#ffc200] dark:focus:ring-[#ffc200] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
                   <div className="lg:flex sm:block block flex-row justify-center items-center">
                     <div
@@ -255,16 +263,16 @@ export default function PricingChild() {
                       ? "bg-primary-dark"
                       : "bg-primary-main"
                   )}
+                  onClick={(e) => {
+                    RadioButtonClick("yearly");
+                  }}
                 >
                   <input
                     checked={isActiveButton === "yearly" ? true : false}
                     id="yearly"
                     type="radio"
                     value=""
-                    onClick={(e) => {
-                      RadioButtonClick("yearly");
-                    }}
-                    className="w-8 h-8 text-[#ffc200] bg-gray-100 border-gray-300 focus:ring-[#ffc200] dark:focus:ring-[#ffc200] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    className="lg:block sm:hidden hidden w-8 h-8 text-[#ffc200] bg-gray-100 border-gray-300 focus:ring-[#ffc200] dark:focus:ring-[#ffc200] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
                   <div className="lg:flex sm:block block flex-row justify-center items-center">
                     <div

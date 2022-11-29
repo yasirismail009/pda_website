@@ -37,6 +37,7 @@ module.exports = {
     "./Widgets/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: false, // or 'media' or 'class'
+  whitelist: ["ml-2", "bg-yellow-400", "pl-56", "pl-72", "pl-80"],
   theme: {
     extend: {
       colors: {
@@ -59,5 +60,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

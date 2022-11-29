@@ -1,25 +1,27 @@
 import React, { useState } from "react";
-import { Typography } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import Blog from "./blog";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
+import ScrollButton from "./scrolltoTop";
+import CircularProgress from "@mui/material/CircularProgress";
 
-// const useStyles = makeStyles({
-//   root: {
-//     // backgroundColor: "#021747",
-//     borderRadius: "20px",
-//   },
-//   main: {
-//     backgroundColor: "#173371 !important",
-//     height: "100vh",
-//     width: "100vw",
-//     overflowX: "hidden",
-//   },
-// });
+const useStyles = makeStyles({
+  root: {
+    borderRadius: "20px",
+  },
+  main: {
+    backgroundColor: "#173371 !important",
+    height: "100vh",
+    width: "100vw",
+    overflowX: "hidden",
+  },
+});
 
 function BlogsContainer(props) {
+  const classes = useStyles();
   const router = useRouter();
   const { lead } = router.query;
   const [loading, setLoading] = useState(false);
@@ -55,8 +57,23 @@ function BlogsContainer(props) {
     );
     const data = await res.data;
 
-    setBlogsList(data);
-    setLoading(false);
+    if (res.data.results) {
+      setLoading(false);
+      setBlogsList(data);
+    }
+  };
+
+  const getLatestPost = async () => {
+    const res = await axios.get(
+      `https://privacydefender.app:8444/blog/all-blogs/?user_key=${lead}`
+    );
+    const data = await res.data;
+
+    if (res.data.results) {
+      setPage(1);
+      setHasMore(true);
+      setBlogsList(data);
+    }
   };
 
   useEffect(() => {
@@ -67,17 +84,22 @@ function BlogsContainer(props) {
     <>
       {loading ? null : (
         <InfiniteScroll
-          dataLength={blogsList.results.length}
+          dataLength={blogsList.results?.length}
           next={getMoreBlogs}
           hasMore={hasMore}
           scrollableTarget="scrollableDiv"
-          loader={<h3> Loading Blogs...</h3>}
+          loader={
+            <div className="flex flex-col justify-center items-center w-full">
+              <CircularProgress />
+              <p className="text-primary-main">News Loading ...</p>
+            </div>
+          }
           endMessage={""}
         >
           <div className="flex items-center justify-center p-2 sm:p-4">
             <div
               style={{ backgroundColor: "#021747", borderRadius: "20px" }}
-              className={`bg-primary-dark  overflow-y-hidden w-full sm:w-2/3`}
+              className={`${classes.root} w-full md:w-3/4`}
             >
               <div className="flex items-center p-4 sm:p-8">
                 <svg
@@ -109,6 +131,7 @@ function BlogsContainer(props) {
           </div>
         </InfiniteScroll>
       )}
+      <ScrollButton getLatestPost={getLatestPost} setPage={setPage} />
     </>
   );
 }

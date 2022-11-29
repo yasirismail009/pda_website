@@ -13,12 +13,14 @@ export default function ServicesInfo() {
   console.log(MapData);
   return (
     <div className="lg:pt-0 sm:pt-16 pt-16 ">
-      <LandingDetails MapData={MapData} />
-      <MoreDetails
+      {MapData?.map((val) => (
+        <LandingDetails MapData={val} id={id} />
+      ))}
+      {/* <MoreDetails
         title={MapData?.title}
         des={MapData?.details}
         youtube={MapData?.youtube}
-      />
+      /> */}
     </div>
   );
 }

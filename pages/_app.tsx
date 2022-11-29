@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { useState, useEffect } from "react";
 import Splashscreen from "../Components/Splash/splashscreen";
 import { useRouter } from "next/router";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
