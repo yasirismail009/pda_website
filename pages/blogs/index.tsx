@@ -1,6 +1,5 @@
 import React from "react";
 import BlogApp from "../../components/blog/blogApp";
-import ScrollButton from "../../components/blog/scrolltoTop";
 import Head from "next/head";
 
 function Blog() {
@@ -46,7 +45,6 @@ function Blog() {
         />
       </Head>
       <BlogApp />
-      {/* <ScrollButton /> */}
     </>
   );
 }

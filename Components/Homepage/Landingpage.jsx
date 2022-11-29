@@ -7,6 +7,11 @@ import RatingIcon from "../../Assets/ratings.svg";
 import LanguageIcon from "../../Assets/languages.svg";
 import AppleStoreIcon from "../../Assets/apple_store.svg";
 import PlayStoreIcon from "../../Assets/play_store.svg";
+import { getAnalytics, logEvent } from "firebase/analytics";
+
+// const analytics = getAnalytics();
+// logEvent(analytics, "play_store_button", { name: "clicked" });
+// logEvent(analytics, "apple_store_button", { name: "clicked" });
 
 export default function LandingPage() {
   return (
@@ -61,7 +66,10 @@ export default function LandingPage() {
             href="https://play.google.com/store/apps/details?id=com.pligence.privacydefender"
             target="_blank"
           >
-            <div className="flex flex-row items-center justify-center cursor-pointer font-bold text-sm lg:px-6 sm:px-5 px-5 lg:py-2  sm:py-1 py-1 text-primary-main bg-primary-dark hover:bg-primary-card   rounded-xl shadow-2xl">
+            <div
+              id="play_store_button"
+              className="flex flex-row items-center justify-center cursor-pointer font-bold text-sm lg:px-6 sm:px-5 px-5 lg:py-2  sm:py-1 py-1 text-primary-main bg-primary-dark hover:bg-primary-card   rounded-xl shadow-2xl"
+            >
               <Image
                 src={PlayStoreIcon}
                 alt="Privacy Defender App"
@@ -76,7 +84,10 @@ export default function LandingPage() {
             href="https://apps.apple.com/us/app/privacy-defender/id1588734793"
             target="_blank"
           >
-            <div className="flex flex-row items-center justify-center cursor-pointer font-bold text-sm lg:px-6 sm:px-5 px-5 lg:py-2  sm:py-1 py-1 bg-primary-text hover:bg-primary-main   rounded-xl shadow-md shadow-slate-400 lg:ml-8 sm:ml-2 ml-2">
+            <div
+              id="apple_store_button"
+              className="flex flex-row items-center justify-center cursor-pointer font-bold text-sm lg:px-6 sm:px-5 px-5 lg:py-2  sm:py-1 py-1 bg-primary-text hover:bg-primary-main   rounded-xl shadow-md shadow-slate-400 lg:ml-8 sm:ml-2 ml-2"
+            >
               <Image
                 src={AppleStoreIcon}
                 alt="Privacy Defender App"
