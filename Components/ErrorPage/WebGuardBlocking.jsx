@@ -23,12 +23,12 @@ export default function ErrorPage() {
               The website you are trying to access may contain malicious content
               and trackers which could affect your privacy.
             </p>
-            <p className="lg:text-2xl sm:text-base text-base font-semibold text-primary-dark text-center">
+            {/* <p className="lg:text-2xl sm:text-base text-base font-semibold text-primary-dark text-center">
               If you want to continue just click on{" "}
               <span className="text-[#ffc200] border-b-2 border-primary-dark">
                 continue
               </span>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -106,7 +106,7 @@ export default function SwipeableTemporaryDrawer() {
                   {" "}
                   <div className="flex justify-left items-center py-2  border-b-2 ">
                     <p className=" text-base font-semibold ml-1 text-primary-dark">
-                      Services
+                      Features
                     </p>
                   </div>
                 </LinkS>

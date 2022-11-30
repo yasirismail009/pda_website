@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BlogApp from "../../components/blog/blogApp";
 import Head from "next/head";
+import { getAnalytics, logEvent } from "firebase/analytics";
+import { FirebaseApp } from "../../firebase.Config";
 
 function Blog() {
+  useEffect(() => {
+    const analytics = getAnalytics(FirebaseApp);
+    logEvent(analytics, "security_news_visisted");
+  }, []);
   return (
     <>
       <Head>

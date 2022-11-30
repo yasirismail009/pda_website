@@ -99,7 +99,7 @@ export default function MainNavbar() {
                   className="cursor-pointer lg:text-base md:text-base text-base font-bold lg:block  sm:hidden hidden"
                   style={{ color: "#173371" }}
                 >
-                  Services
+                  Features
                 </p>
               </LinkS>
             ) : null}

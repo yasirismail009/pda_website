@@ -4,6 +4,7 @@ import React from "react";
 import { useState, useRef } from "react";
 import clsx from "clsx";
 import { useEffect } from "react";
+import { getAnalytics, logEvent } from "firebase/analytics";
 
 const useStyles = makeStyles({
   root: {
@@ -125,7 +126,7 @@ function Blog(props) {
                 />
               ))}
           </div>
-          <div className="lg:hidden sm:block block py-1 sm:py-2 ">
+          <div className="lg:hidden sm:flex flex  justify-center py-1 sm:py-2 ">
             {img && <img src={img} fill sizes="100%" className="rounded-xl" />}
           </div>
           <div className="flex items-center justify-between sm:justify-start space-x-4 pt-2">

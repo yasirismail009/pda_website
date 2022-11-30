@@ -16,11 +16,6 @@ export default function ServicesInfo() {
       {MapData?.map((val) => (
         <LandingDetails MapData={val} id={id} />
       ))}
-      {/* <MoreDetails
-        title={MapData?.title}
-        des={MapData?.details}
-        youtube={MapData?.youtube}
-      /> */}
     </div>
   );
 }

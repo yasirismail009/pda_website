@@ -65,7 +65,7 @@ export default function Services() {
       </div>
       <div>
         <p className="lg:text-4xl sm:text-xl text-xl font-bold text-primary-main lg:ml-8 sm:ml-0 ml-0 lg:mb-8 sm:mb-12 mb-12 ">
-          Included Services:
+          Included Features:
         </p>
         {/* <p className="lg:text-2xl sm:text-base text-base font-medium text-primary-text lg:ml-16 sm:ml-0 ml-0  ">
           Our services are defined by quality and commitment.

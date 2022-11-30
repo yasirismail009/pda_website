@@ -10,6 +10,7 @@ import AppleStoreIcon from "../../Assets/apple_store.svg";
 import PlayStoreIcon from "../../Assets/play_store.svg";
 import PlayStoreWhiteIcon from "../../Assets/play_store_white.svg";
 import clsx from "clsx";
+import { ButtonClickFunction } from "../Analytics/AnalyticsFunction";
 
 export default function LandingDetails(props) {
   const MapData = props.MapData;
@@ -82,6 +83,9 @@ export default function LandingDetails(props) {
                       ? "text-primary-main bg-primary-dark hover:bg-primary-card"
                       : "text-primary-dark bg-primary-main hover:bg-primary-text"
                   )}
+                  onClick={(e) => {
+                    ButtonClickFunction("features_playstore_button_clicked");
+                  }}
                 >
                   <Image
                     src={
@@ -109,6 +113,9 @@ export default function LandingDetails(props) {
                       ? "text-primary-main bg-primary-dark hover:bg-primary-card"
                       : "text-primary-dark bg-primary-main hover:bg-primary-text"
                   )}
+                  onClick={(e) => {
+                    ButtonClickFunction("features_applestore_button_clicked");
+                  }}
                 >
                   <Image
                     src={
