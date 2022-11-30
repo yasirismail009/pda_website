@@ -15,7 +15,9 @@ function BlogContainer(props) {
   const classes = useStyles();
   return (
     <div className={`${classes.root} bg-primary-dark overflow-hidden`}>
-      <Header />
+      <div className="lg:mb-28">
+        <Header />
+      </div>
       <BlogsContainer />
     </div>
   );

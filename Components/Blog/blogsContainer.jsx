@@ -90,7 +90,7 @@ function BlogsContainer(props) {
           hasMore={hasMore}
           scrollableTarget="scrollableDiv"
           loader={
-            <div className="flex flex-col justify-center items-center w-full overflow-hidden">
+            <div className="flex flex-col justify-center items-center w-full overflow-hidden mt-40">
               <CircularProgress />
               <p className="text-primary-main">News Loading ...</p>
             </div>

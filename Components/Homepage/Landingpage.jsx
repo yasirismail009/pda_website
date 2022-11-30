@@ -99,7 +99,7 @@ export default function LandingPage() {
                 alt="Privacy Defender App"
                 className="lg:p-1 sm:p-1 p-1"
               />
-              <div className="lg:text-base sm:text-base text-base font-semibold lg:ml-4 sm:ml-2 ml-2">
+              <div className="lg:text-base sm:text-xs text-xs font-semibold lg:ml-4 sm:ml-2 ml-2">
                 Apple Store
               </div>
             </div>

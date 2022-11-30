@@ -150,25 +150,44 @@ export default function SwipeableTemporaryDrawer() {
             </ListItemText>
             <ListItemText>
               {router.pathname === "/" ? (
-                <Link href="/app_guide">
+                <Link href="/features?id=android">
                   {" "}
                   <div className="flex justify-left items-center py-2 border-b-2">
                     <p className=" text-base font-semibold ml-1 text-primary-dark">
-                      App Guide
+                      App Guide - Android
                     </p>
                   </div>
                 </Link>
               ) : (
-                <Link href="/app_guide">
+                <Link href="/features?id=android">
                   <div className="flex justify-left items-center py-2 border-b-2">
                     <p className=" text-base font-semibold ml-1 text-primary-dark">
-                      App Guide
+                      App Guide - Android
                     </p>
                   </div>
                 </Link>
               )}
             </ListItemText>
-
+            <ListItemText>
+              {router.pathname === "/" ? (
+                <Link href="/features?id=ios">
+                  {" "}
+                  <div className="flex justify-left items-center py-2 border-b-2">
+                    <p className=" text-base font-semibold ml-1 text-primary-dark">
+                      App Guide - IOS
+                    </p>
+                  </div>
+                </Link>
+              ) : (
+                <Link href="/features?id=ios">
+                  <div className="flex justify-left items-center py-2 border-b-2">
+                    <p className=" text-base font-semibold ml-1 text-primary-dark">
+                      App Guide - IOS
+                    </p>
+                  </div>
+                </Link>
+              )}
+            </ListItemText>
             <ListItemText>
               {router.pathname === "/" ? (
                 <Link href="/blogs.html?lead=124">
